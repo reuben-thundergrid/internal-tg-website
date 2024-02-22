@@ -2,9 +2,7 @@ name: React app deployment
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    tags: [ 'v*.*.*' ]
 
 jobs:
   build:

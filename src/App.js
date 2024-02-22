@@ -15,6 +15,7 @@ const App = () => {
   
   return (
     <>
+      {/* <p>Hello</p> */}
       <WizardSteps {...{ step, wizard}}/>
       {step !== "create" ? <MinCardComponent header="Back" work={() => wizard.previousStep()} /> : <></>}
       {!["create", "invoice"].includes(step) ? <MinCardComponent header="Restart" work={() => wizard.initialize()} /> : <></>}

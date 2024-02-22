@@ -3,7 +3,10 @@ name: React app deployment
 on:
   push:
     branches: [main]
-
+    
+env:
+  CI: false
+  
 jobs:
   build:
 

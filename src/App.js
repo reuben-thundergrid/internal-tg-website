@@ -2,13 +2,12 @@ import "./App.css"
 
 import {useWizard} from "use-wizard";
 import WizardSteps from './WizardSteps.tsx';
-import CardComponent from './CardComponent.tsx';
 
 const App = () => {
   const path = ["create", "invoice", "sale", {
     "st1": ["st1step0", "D", "E"],
     "st2": ["st2step1", "st2step2"],
-    "st3": ["st3step0", "st3step1"]
+    "st3": ["st3step0"]
   }, "shipping", "finish"]
 
   const [step, wizard] = useWizard(path); 

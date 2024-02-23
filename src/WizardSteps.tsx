@@ -6,7 +6,7 @@ import Create from "./WizardSteps/Create.tsx";
 import Invoice from "./WizardSteps/Invoice.tsx";
 import Sale from "./WizardSteps/Sale.tsx";
 import St3step0 from "./WizardSteps/st3/St3step0.tsx";
-import St3step1 from "./WizardSteps/st3/St3step1.tsx";
+import Shipping from "./WizardSteps/Shipping.tsx";
 
 export default (props: {
     step: TStep;
@@ -21,10 +21,8 @@ export default (props: {
             return <Sale {...props} />;
         case "st3step0":
             return <St3step0 {...props} />;
-        case "st3step1":
-            return <St3step1 {...props} />;
         case "shipping":
-            return <a>shipping</a>;
+            return <Shipping {...props} />
         default:
             return <>Step does not exist</>;
     }

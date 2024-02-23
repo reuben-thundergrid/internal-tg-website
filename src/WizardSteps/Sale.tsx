@@ -1,7 +1,15 @@
 import React from "react";
-import "../Card.css"
 import saleType from "../Gif/saleType.gif";
 
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import HomeIcon from '@mui/icons-material/Home';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
@@ -13,14 +21,48 @@ export default (props: {
 }) => {
   return (
     <>
-    <img src={saleType}/>
-    <div className="grid">
-      <CardComponent header="Seelct a Sale Type"/>
-      <CardComponent header="New Ocean Connection" work={() => props.wizard.goToStep("st1")}/>
-      <CardComponent header="Modify Ocean Connection" work={() => props.wizard.goToStep("st2step1")}/>
-      <CardComponent header="Future Ocean Connection" work={() => props.wizard.goToStep("st3step0")}/>
-      <CardComponent header="Simple Sale" work={() => props.wizard.goToStep("shipping")}/>
+    <div style={{
+      display: "grid", 
+      gridTemplateColumns: "auto, auto",
+      gridTemplateRows: "auto, auto, auto, 1em"
+    }}>
+    <h1 style={{color: "white", gridRowStart: 1, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>select sale type</h1>
+    <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center", gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3}}>
+        <img style={{margin: "1em"}} src={saleType}/>
     </div>
+    <div style={{color: "white"}}>
+      <h3>What Defines a New Ocean Connection</h3>
+      <h2>a ocean connection represents one power distribution</h2>
+      <ul>
+        <li>Each local load management cluster will have its own Ocean Connection</li>
+        <li>If two separate clusters share the same power distribution. You are doing it wrong, that should be one cluster</li>
+        <li>DC Chargers can be added to existing Ocean Connections regardless of which power distribution they are on</li>
+      </ul>
+    </div>
+    <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Sale Type in Clickup Task Custom Field</h2>
+    <div style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
+      <div>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1")}>New Ocean Connection</Button>
+        <p>for chargers that don't have an existing power distribution in ocean</p>
+      </div>
+      <div>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st2step1")}>Modify Ocean Connection</Button>
+        <p>for when adding chargers to an existing ocean connection</p>
+      </div>
+      <div>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st3step0")}>Future Ocean Connection</Button>
+        <p>for chargers that there are currently no plans to connect to Ocean</p>
+      </div>
+      <div>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("shipping")}>Simple Sale</Button>
+        <p>nothing to do with ocean</p>
+      </div>
+    </div>
+    <div style={{display: "flex", justifyContent: "center", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3}}>
+      <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => props.wizard.initialize()}>Home</Button>
+      <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => props.wizard.previousStep()}>Back Step</Button>
+    </div>
+  </div>
     </>
   );
 };

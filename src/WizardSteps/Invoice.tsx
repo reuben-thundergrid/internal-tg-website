@@ -1,11 +1,6 @@
 import React from "react";
 import invoiceGif from "../Gif/invoice.gif";
 
-
-import Button from '@mui/material/Button';
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 export default (props: {
@@ -28,10 +23,6 @@ export default (props: {
         <li>Make sure the invoice is accurate as this will determine what items are shipped</li>
         <li>For home charging programs use the format <i>thundergrid.click/ko</i> in the invoice custom field</li>
       </ul>
-    </div>
-    <div style={{display: "flex", justifyContent: "center", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3}}>
-      <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => props.wizard.previousStep()}>Back Step</Button>
-      <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => props.wizard.nextStep()}>Next Step</Button>
     </div>
   </div>
   );

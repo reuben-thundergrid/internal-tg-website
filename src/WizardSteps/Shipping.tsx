@@ -1,11 +1,6 @@
 import React from "react";
 
 import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import HomeIcon from '@mui/icons-material/Home';
-
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
@@ -28,12 +23,6 @@ export default (props: {
         <li>Step 2</li>
         <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>Important Step</li>
       </ul>
-    </div>
-    //position: "fixed", bottom: 0, 
-    <div style={{display: "flex", justifyContent: "center", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3}}>
-      <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => props.wizard.previousStep()}>Back Step</Button>
-      <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => props.wizard.initialize()}>Home</Button>
-      <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => props.wizard.nextStep()}>Next Step</Button>
     </div>
   </div>
   );

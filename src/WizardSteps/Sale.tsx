@@ -1,14 +1,11 @@
 import React from "react";
 import saleType from "../Gif/saleType.gif";
 
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import HomeIcon from '@mui/icons-material/Home';
 import Button from '@mui/material/Button';
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export default (props: {
   step: TStep;
@@ -35,6 +32,7 @@ export default (props: {
       </ul>
     </div>
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Sale Type in Clickup Task Custom Field</h2>
+    <h3 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Click Choosen Sale Type to Continue</h3>
     <div style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#1bbc9c", "&:hover": {backgroundColor: "red"}}} onClick={() => props.wizard.goToStep("st1")}>New Ocean Connection</Button>
@@ -52,10 +50,6 @@ export default (props: {
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("shipping")}>Simple Sale</Button>
         <p>nothing to do with ocean</p>
       </div>
-    </div>
-    <div style={{display: "flex", justifyContent: "center", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3}}>
-      <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => props.wizard.previousStep()}>Back Step</Button>
-      <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => props.wizard.initialize()}>Home</Button>
     </div>
   </div>
     </>

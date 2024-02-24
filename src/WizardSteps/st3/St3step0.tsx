@@ -3,7 +3,6 @@ import St3step0 from "../../Gif/St3step0.gif";
 
 import Button from '@mui/material/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
@@ -28,10 +27,6 @@ export default (props: {
         <li>OPTIONAL: Fill out as much info about the Ocean Connection as possible</li>
       </ul>
       <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1")}>Follow Steps for new Ocean Connection</Button>
-    </div>
-    //position: "fixed", bottom: 0, 
-    <div style={{display: "flex", justifyContent: "center", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3}}>
-      <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => props.wizard.nextStep()}>Next Step</Button>
     </div>
   </div>
   );

@@ -19,7 +19,7 @@ export default (props: {
       <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em"}} src={St3step0}/>
     </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
-      <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
+      <ul style={{color: "white", fontSize: "3em", marginLeft: "0.4em"}}>
         <li>Create a subtask in the Network Ops Space under Ocean Connections</li>
         <li>The name of the task will be the name created in Ocean</li>
         <li>This task will be in the <i>Dormant</i> list</li>

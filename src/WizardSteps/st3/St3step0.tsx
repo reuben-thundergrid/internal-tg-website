@@ -1,5 +1,6 @@
 import React from "react";
 import St3step0 from "../../Gif/St3step0.gif";
+import StepHeader from "../../Components/StepHeader.tsx";
 
 import Button from '@mui/material/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -12,10 +13,8 @@ export default (props: {
   wizard: IWizard;
 }) => {
   return (
-    <div style={{
-      display: "grid"
-    }}>
-    <h1 style={{color: "white", gridRowStart: 1, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>create a subtask inside <i>Dormant</i></h1>
+    <>
+    <StepHeader>create a subtask inside <i>Dormant</i></StepHeader>
     <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
       <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em"}} src={St3step0}/>
     </div>
@@ -28,7 +27,7 @@ export default (props: {
       </ul>
       <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1")}>Follow Steps for new Ocean Connection</Button>
     </div>
-  </div>
+  </>
   );
 };
 

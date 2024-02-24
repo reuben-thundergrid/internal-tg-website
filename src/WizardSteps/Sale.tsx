@@ -1,5 +1,6 @@
 import React from "react";
 import saleType from "../Gif/saleType.gif";
+import StepHeader from "../Components/StepHeader.tsx";
 
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Button from '@mui/material/Button';
@@ -13,12 +14,7 @@ export default (props: {
 }) => {
   return (
     <>
-    <div style={{
-      display: "grid", 
-      gridTemplateColumns: "auto, auto",
-      gridTemplateRows: "auto, auto, auto, 1em"
-    }}>
-    <h1 style={{color: "white", gridRowStart: 1, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>select sale type</h1>
+    <StepHeader>select sale type</StepHeader>
     <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center", gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3}}>
         <img style={{margin: "1em"}} src={saleType}/>
     </div>
@@ -51,7 +47,6 @@ export default (props: {
         <p>nothing to do with ocean</p>
       </div>
     </div>
-  </div>
     </>
   );
 };

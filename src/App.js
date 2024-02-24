@@ -11,7 +11,10 @@ import WizardSteps from './WizardSteps.tsx';
 const App = () => {
   const path = ["create", "invoice", "sale", {
     "st1": ["st1step0", "D", "E"],
-    "st2": ["st2step1", "st2step2"],
+    "st2": ["st2step1", "st2step2", { 
+      "err": ["err"], 
+      "st2step3": ["st2step3"]
+    }, "test"],
     "st3": ["st3step0"]
   }, "shipping", "finish"]
 
@@ -22,7 +25,6 @@ const App = () => {
       <div style={{display: "grid"}}>
         <WizardSteps {...{ step, wizard}}/>
       </div>
-      //position: "fixed", bottom: 0, 
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
         {!["create", "invoice"].includes(step) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}

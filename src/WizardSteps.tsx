@@ -5,6 +5,8 @@ import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 import Create from "./WizardSteps/Create.tsx";
 import Invoice from "./WizardSteps/Invoice.tsx";
 import Sale from "./WizardSteps/Sale.tsx";
+import St2step1 from "./WizardSteps/st2/St2step1.tsx";
+import St2step2 from "./WizardSteps/st2/St2step2.tsx";
 import St3step0 from "./WizardSteps/st3/St3step0.tsx";
 import Shipping from "./WizardSteps/Shipping.tsx";
 
@@ -19,11 +21,23 @@ export default (props: {
             return <Invoice {...props} />;
         case "sale":
             return <Sale {...props} />;
+
+        case "st2step1":
+            return <St2step1 {...props} />;
+        case "st2step2":
+            return <St2step2 {...props} />;
+
+
         case "st3step0":
             return <St3step0 {...props} />;
+
+
         case "shipping":
             return <Shipping {...props} />
+        
+        case  "err":
+            return <p style={{color: "white"}}>Please talk to some in network ops</p>
         default:
-            return <>Step does not exist</>;
+            return <p style={{color: "white"}}>Step does not exist</p>;
     }
 };

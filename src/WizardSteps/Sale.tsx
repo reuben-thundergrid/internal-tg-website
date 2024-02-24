@@ -32,8 +32,8 @@ export default (props: {
       </ul>
     </div>
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Sale Type in Clickup Task Custom Field</h2>
-    <h3 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Click Choosen Sale Type to Continue</h3>
-    <div style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
+    <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Click Choosen Sale Type to Continue</h3>
+    <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#1bbc9c", "&:hover": {backgroundColor: "red"}}} onClick={() => props.wizard.goToStep("st1")}>New Ocean Connection</Button>
         <p>for chargers that don't have an existing power distribution in ocean</p>

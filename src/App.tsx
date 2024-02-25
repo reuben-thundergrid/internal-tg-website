@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css"
 
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -19,6 +20,24 @@ const App = () => {
   }, "shipping", "finish"]
 
   const [step, wizard] = useWizard(path);
+  // console.log(path);
+  //Find current position in arrary based on step
+  //If next item in array is an object hide button
+
+  function findPositionAndCheckNext<T>(arr: T[], value: T): { isNextObject: boolean } {
+    const position = arr.indexOf(value);
+    const isNextObject = typeof arr[position + 1] === 'object';
+    return { isNextObject };
+  }
+
+  // Example usage:
+  const arr = [1, 2, 3, { key: 'value' }, 5];
+  const valueToFind = 2;
+  const { isNextObject } = findPositionAndCheckNext(arr, valueToFind);
+  // console.log(arr);
+  // console.log(`Is the next item an object? ${isNextObject}`);
+
+  console.log(path.indexOf(step));
 
   return (
     <>
@@ -28,7 +47,8 @@ const App = () => {
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
         {!["create", "invoice"].includes(step) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
-        {step !== "" ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+        {findPositionAndCheckNext(path, path.indexOf(step)) ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+        {/* {step !== "finish" ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>} */}
       </div>
     </>
   );

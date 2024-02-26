@@ -24,20 +24,13 @@ const App = () => {
   //Find current position in arrary based on step
   //If next item in array is an object hide button
 
-  function findPositionAndCheckNext<T>(arr: T[], value: T): { isNextObject: boolean } {
+  function findPositionAndCheckNext<T>(arr: T[], value: T): boolean {
     const position = arr.indexOf(value);
-    const isNextObject = typeof arr[position + 1] === 'object';
-    return { isNextObject };
+    if (position !== -1 && position + 1 < arr.length) {
+      return typeof arr[position + 1] === 'object';
+    }
+    return false;
   }
-
-  // Example usage:
-  const arr = [1, 2, 3, { key: 'value' }, 5];
-  const valueToFind = 2;
-  const { isNextObject } = findPositionAndCheckNext(arr, valueToFind);
-  // console.log(arr);
-  // console.log(`Is the next item an object? ${isNextObject}`);
-
-  console.log(path.indexOf(step));
 
   return (
     <>
@@ -46,8 +39,8 @@ const App = () => {
       </div>
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
-        {!["create", "invoice"].includes(step) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
-        {findPositionAndCheckNext(path, path.indexOf(step)) ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+        {!["create", "invoice"].includes(step.toString()) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
+        {!findPositionAndCheckNext(path, step.toString()) ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
         {/* {step !== "finish" ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>} */}
       </div>
     </>

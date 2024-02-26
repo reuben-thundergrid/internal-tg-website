@@ -16,7 +16,7 @@ export default (props: {
     <>
     <StepHeader>create a subtask inside <i>Dormant</i></StepHeader>
     <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-      <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em"}} src={St3step0}/>
+      <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={St3step0}/>
     </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
       <ul style={{color: "white", fontSize: "3em", marginLeft: "0.4em"}}>

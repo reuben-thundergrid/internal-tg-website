@@ -16,7 +16,7 @@ export default (props: {
     <>
     <StepHeader>select sale type</StepHeader>
     <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center", gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3}}>
-        <img style={{margin: "1em"}} src={saleType}/>
+        <img style={{margin: "1em", borderRadius: "1em"}} src={saleType}/>
     </div>
     <div style={{color: "white", marginLeft: "1em", display: "flex", flexDirection: "column", justifyContent: "center"}}>
       <h3>What Defines a New Ocean Connection?</h3>

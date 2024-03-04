@@ -9,6 +9,7 @@ import St2step1 from "./WizardSteps/st2/St2step1.tsx";
 import St2step2 from "./WizardSteps/st2/St2step2.tsx";
 import St3step0 from "./WizardSteps/st3/St3step0.tsx";
 import Shipping from "./WizardSteps/Shipping.tsx";
+import Finish from "./WizardSteps/Finish.tsx";
 
 export default (props: {
     step: TStep;
@@ -34,6 +35,8 @@ export default (props: {
 
         case "shipping":
             return <Shipping {...props} />
+        case "finish":
+            return <Finish {...props} />
         
         case  "err":
             return <p style={{color: "white"}}>Please talk to some in network ops</p>

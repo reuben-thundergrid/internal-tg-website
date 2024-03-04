@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./App.css"
 
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -20,9 +21,6 @@ const App = () => {
   }, "shipping", "finish"]
 
   const [step, wizard] = useWizard(path);
-  // console.log(path);
-  //Find current position in arrary based on step
-  //If next item in array is an object hide button
 
   function findPositionAndCheckNext<T>(arr: T[], value: T): boolean {
     const position = arr.indexOf(value);
@@ -32,6 +30,26 @@ const App = () => {
     return false;
   }
 
+  //Logic for next button
+  const [next, setNext] = useState(true);
+  console.log(findPositionAndCheckNext(path, step.toString())); //returns false on "st2step2", need to return true
+  useEffect(() => {
+    if(step === "finish"){
+      setNext(false);
+      return;
+    }
+    if(step === "err"){
+      setNext(false);
+      return;
+    }
+    if(findPositionAndCheckNext(path, step.toString())){
+      setNext(false);
+      return;
+    }
+    setNext(true);
+    return;
+  }, [step]);
+
   return (
     <>
       <div style={{display: "grid"}}>
@@ -40,8 +58,7 @@ const App = () => {
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
         {!["create", "invoice"].includes(step.toString()) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
-        {!findPositionAndCheckNext(path, step.toString()) ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
-        {/* {step !== "finish" ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>} */}
+        {next ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
       </div>
     </>
   );

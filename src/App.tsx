@@ -18,7 +18,7 @@ const App = () => {
       "st2step3": ["st2step3"]
     }, "test"],
     "st3": ["st3step0"]
-  }, "shipping", "finish"]
+  }, "shipping", "priority", "finish"]
 
   const [step, wizard] = useWizard(path);
 

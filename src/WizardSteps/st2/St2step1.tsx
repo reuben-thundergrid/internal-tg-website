@@ -21,7 +21,7 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Mention exisitng Ocean connection in Sales task description</li>
+          <li>Mention exisitng Ocean connection task in Sales task description</li>
           <li>Set Ocean connection task back to first status</li>
           <li style={{border: "1px solid green", borderRadius: "15px", padding: "0.2em"}}>When mentioning a task, type to search. You can search by a task's custom ID</li>
         </ul>

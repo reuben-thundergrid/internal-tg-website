@@ -11,6 +11,7 @@ import {useWizard} from "use-wizard";
 import WizardSteps from './WizardSteps.tsx';
 
 const App = () => {
+  //Tree structure
   const path = ["create", "invoice", "sale", {
     "st1": ["st1step0", "D", "E"],
     "st2": ["st2step1", "st2step2", { 
@@ -22,33 +23,44 @@ const App = () => {
 
   const [step, wizard] = useWizard(path);
 
-  function findPositionAndCheckNext<T>(arr: T[], value: T): boolean {
-    const position = arr.indexOf(value);
-    if (position !== -1 && position + 1 < arr.length) {
-      return typeof arr[position + 1] === 'object';
+  //Depth first search
+  function depthFistSearch(arr, item){
+    for (let i = 0; i < arr.length; i++){
+      if(arr[i] === item){
+        return [i];
+      }else if(typeof arr[i] === "object"){
+        for (let key in arr[i]){
+          const deeper = depthFistSearch(arr[i][key], item);
+          if(deeper.length !== 0){
+            return [i, key, ...deeper];
+          }
+        }
+      }
     }
-    return false;
+    return [];
   }
 
-  //Logic for next button
-  const [next, setNext] = useState(true);
-  console.log(findPositionAndCheckNext(path, step.toString())); //returns false on "st2step2", need to return true
-  useEffect(() => {
+  function getThing(arr, chain){
+    if(chain.length === 0){
+      return arr;
+    }
+    const i = chain[0];
+    return getThing(arr[i], chain.slice(1));
+  }
+
+  function showNextButton(){
     if(step === "finish"){
-      setNext(false);
-      return;
+      return false;
     }
-    if(step === "err"){
-      setNext(false);
-      return;
+    const search = depthFistSearch(path, step);
+    const parentArr = getThing(path, search.slice(0, search.length - 1));
+    const currentIndex = search.at(-1);
+    const nextItem = parentArr[currentIndex + 1];
+    if(typeof nextItem === "object"){
+      return false;
     }
-    if(findPositionAndCheckNext(path, step.toString())){
-      setNext(false);
-      return;
-    }
-    setNext(true);
-    return;
-  }, [step]);
+    return true;
+  }
 
   return (
     <>
@@ -58,7 +70,7 @@ const App = () => {
       <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
         {!["create", "invoice"].includes(step.toString()) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
-        {next ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+        {showNextButton() ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
       </div>
     </>
   );

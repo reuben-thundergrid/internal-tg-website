@@ -11,6 +11,7 @@ import St3step0 from "./WizardSteps/st3/St3step0.tsx";
 import Shipping from "./WizardSteps/Shipping.tsx";
 import Finish from "./WizardSteps/Finish.tsx";
 import Priority from "./WizardSteps/Priority.tsx";
+import St2step3 from "./WizardSteps/st2/St2step3.tsx";
 
 export default (props: {
     step: TStep;
@@ -28,6 +29,8 @@ export default (props: {
             return <St2step1 {...props} />;
         case "st2step2":
             return <St2step2 {...props} />;
+        case "st2step3":
+            return <St2step3 {...props} />;
 
 
         case "st3step0":
@@ -42,7 +45,7 @@ export default (props: {
             return <Finish {...props} />
         
         case  "err":
-            return <p style={{color: "white"}}>Please talk to some in network ops</p>
+            return <h1 style={{color: "white", display: "flex", justifyContent: "center", alignItems: "center"}}>please talk to some in network ops before proceeding</h1>
         default:
             return <p style={{color: "white"}}>Step does not exist</p>;
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import createGif from "../../Gif/create.gif";
+import st2step1Gif from "../../Gif/st2step1.gif";
 
 import Button from '@mui/material/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -15,17 +15,17 @@ export default (props: {
 }) => {
   return (
     <>
-      <StepHeader>finding existing ocean connection task</StepHeader>
+      <StepHeader>find & link existing ocean connection task(s)</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={createGif} />
+        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st2step1Gif} />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>info 1</li>
-          <li>info 2</li>
-          <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>important info</li>
+          <li>Mention exisitng Ocean connection in Sales task description</li>
+          <li>Set Ocean connection task back to first status</li>
+          <li style={{border: "1px solid green", borderRadius: "15px", padding: "0.2em"}}>When mentioning a task, type to search. You can search by a task's custom ID</li>
         </ul>
-        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://app.clickup.com/6958308/v/l/6-901601362733-1")}>important resource</Button>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtube.com")}>GUIDE: How To Mention A Task</Button>
       </div>
     </>
   );

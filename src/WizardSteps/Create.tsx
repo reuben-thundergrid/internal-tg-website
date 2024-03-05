@@ -24,7 +24,7 @@ export default (props: {
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
           <li>Create a new task in the sales pipeline</li>
           <li>Make the name of the task the same as the deal in Hubspot</li>
-          <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>Assign yourself to the task</li>
+          <li style={{border: "1px solid red", borderRadius: "15px", padding: "0.2em"}}>Assign yourself to the task</li>
         </ul>
         <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://app.clickup.com/6958308/v/l/6-901601362733-1")}>Open Clickup</Button>
       </div>

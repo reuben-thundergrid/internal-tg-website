@@ -24,6 +24,14 @@ import St1step3 from "./WizardSteps/st1/St1step3.tsx";
 import St1step4 from "./WizardSteps/st1/St1step4.tsx";
 import Phz3step1 from "./WizardSteps/st1/phz3/Phz3step1.tsx";
 import St1step5 from "./WizardSteps/st1/St1step5.tsx";
+import Pub1step1 from "./WizardSteps/st1/pub1/Pub1step1.tsx";
+import Pub1step2 from "./WizardSteps/st1/pub1/Pub1step2.tsx";
+import Prv1step1 from "./WizardSteps/st1/prv1/Prv1step1.tsx";
+import Prv1step2 from "./WizardSteps/st1/prv1/Prv1step2.tsx";
+import St1step6 from "./WizardSteps/st1/St1step6.tsx";
+import St1step7 from "./WizardSteps/st1/St1step7.tsx";
+import St1step8 from "./WizardSteps/st1/St1step8.tsx";
+import St1step9 from "./WizardSteps/st1/St1step9.tsx";
 
 export default (props: {
     step: TStep;
@@ -65,6 +73,28 @@ export default (props: {
 
         case "st1step5":
             return <St1step5 {...props} />
+
+            //Access Type
+            case "pub1step1":
+                return <Pub1step1 {...props}/>
+            case "pub1step2":
+                return <Pub1step2 {...props}/>
+            case "prv1step1":
+                return <Prv1step1 {...props}/>
+            case "prv1step2":
+                return <Prv1step2 {...props}/>
+        
+        case "st1step6":
+            return <St1step6 {...props} />
+        case "st1step7":
+            return <St1step7 {...props} />
+        case "st1step8":
+            return <St1step8 {...props} />
+
+        //con, sim, del    
+
+        case "st1step8":
+            return <St1step9 {...props} />
 
         //Sale Type 2
         case "st2step1":

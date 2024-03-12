@@ -24,9 +24,9 @@ const App = () => {
       "pub1step1": ["pub1step1", "pub1step2"],
       "prv1step1": ["prv1step1", "prv1step2"]
     }, "st1step6", "st1step7", "st1step8", {
-      "sim1step1": "sim1step1",
-      "con1step1": "con1step1",
-      "del1step1": "del1step1"
+      "sim1step1": ["sim1step1"],
+      "con1step1": ["con1step1"],
+      "del1step1": ["del1step1"]
     }, "st1step9"],
 
     //Sale Type 2

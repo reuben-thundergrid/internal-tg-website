@@ -28,6 +28,9 @@ import Pub1step1 from "./WizardSteps/st1/pub1/Pub1step1.tsx";
 import Pub1step2 from "./WizardSteps/st1/pub1/Pub1step2.tsx";
 import Prv1step1 from "./WizardSteps/st1/prv1/Prv1step1.tsx";
 import Prv1step2 from "./WizardSteps/st1/prv1/Prv1step2.tsx";
+import Con1step1 from "./WizardSteps/st1/con1/Con1step1.tsx";
+import Sim1step1 from "./WizardSteps/st1/sim1/Sim1step1.tsx";
+import Del1step1 from "./WizardSteps/st1/del1/Del1step1.tsx";
 import St1step6 from "./WizardSteps/st1/St1step6.tsx";
 import St1step7 from "./WizardSteps/st1/St1step7.tsx";
 import St1step8 from "./WizardSteps/st1/St1step8.tsx";
@@ -91,9 +94,15 @@ export default (props: {
         case "st1step8":
             return <St1step8 {...props} />
 
-        //con, sim, del    
+            //con, sim, del
+            case "con1step1":
+                return <Con1step1 {...props} />
+            case "sim1step1":
+                return <Sim1step1 {...props} />
+            case "del1step1":
+                return <Del1step1 {...props} />
 
-        case "st1step8":
+        case "st1step9":
             return <St1step9 {...props} />
 
         //Sale Type 2

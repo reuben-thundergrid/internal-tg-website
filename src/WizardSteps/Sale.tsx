@@ -32,7 +32,7 @@ export default (props: {
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       {/* Need to add hover effect to buttons */}
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#1BBC9C"}} onClick={() => props.wizard.goToStep("st1")}>New Ocean Connection</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#1BBC9C"}} onClick={() => props.wizard.goToStep("st1step0")}>New Ocean Connection</Button>
         <p>for chargers that don't have an existing power distribution in ocean</p>
       </div>
       <div>

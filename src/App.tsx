@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "./App.css"
 
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -12,18 +11,38 @@ import WizardSteps from './WizardSteps.tsx';
 
 const App = () => {
   //Tree structure
+  //Note: There always must be a step between two objects
   const path = ["create", "invoice", "sale", {
-    "st1": ["st1step0", "D", "E"],
+    //Sale Type 1
+    "st1": ["st1step0", "st1step1", "st1step2", {
+      "lm1step0": ["lm1step0"],
+      "lm1step1": ["lm1step1"],
+      "lm1step2": ["lm1step2"]
+    }, "st1step3", "st1step4", {
+      "phz3step1": ["phz3step1"]
+    }, "st1step5", {
+      "pub1step1": ["pub1step1", "pub1step2"],
+      "prv1step1": ["prv1step1", "prv1step2"]
+    }, "st1step6", "st1step7", "st1step8", {
+      "sim1step1": "sim1step1",
+      "con1step1": "con1step1",
+      "del1step1": "del1step1"
+    }, "st1step9"],
+
+    //Sale Type 2
     "st2": ["st2step1", "st2step2", { 
       "err": ["err"], 
       "st2step3": ["st2step3"]
-    }, "test"],
+    }, "hop1"],
+
+    //Sale Type 3
     "st3": ["st3step0"]
   }, "shipping", "priority", "finish"]
 
   const [step, wizard] = useWizard(path);
 
   //Depth first search
+  //Returns path to current step
   function depthFistSearch(arr, item){
     for (let i = 0; i < arr.length; i++){
       if(arr[i] === item){
@@ -40,6 +59,7 @@ const App = () => {
     return [];
   }
 
+  //Returns parent array
   function getThing(arr, chain){
     if(chain.length === 0){
       return arr;
@@ -71,6 +91,7 @@ const App = () => {
         {step !== "create" ? <Button variant="outlined" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
         {!["create", "invoice"].includes(step.toString()) ? <Button variant="outlined" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
         {showNextButton() ? <Button variant="outlined" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+        {confetti();}
       </div>
     </>
   );

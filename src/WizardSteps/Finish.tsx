@@ -4,6 +4,9 @@ import finishGif from "../Gif/finish.gif";
 import Button from '@mui/material/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
+import useWindowSize from "react-use/lib/useWindowSize"
+import Confetti from "react-confetti"
+
 import StepHeader from "../Components/StepHeader.tsx"
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
@@ -13,6 +16,8 @@ export default (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
+
+  const { width, height } = useWindowSize();
 
   const finishWords = [
     "finish",         // English
@@ -42,6 +47,7 @@ export default (props: {
 
   return (
     <>
+      <Confetti width={width} height={height}/>
       <StepHeader>{randomWord}</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
         <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={finishGif} />

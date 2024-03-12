@@ -1,5 +1,5 @@
 import React from "react";
-import St3step0 from "../../Gif/St3step0.gif";
+import St3step0 from "../../Gif/st3step0.gif";
 import StepHeader from "../../Components/StepHeader.tsx";
 
 import Button from '@mui/material/Button';
@@ -26,7 +26,7 @@ export default (props: {
         <li>Mention this task under "Ocean Connection(s)" in the Sales task</li>
         <li>OPTIONAL: Fill out as much info about the Ocean Connection as possible</li>
       </ul>
-      <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1")}>Follow Steps for new Ocean Connection</Button>
+      <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1step0")}>Follow Steps for new Ocean Connection</Button>
     </div>
   </>
   );

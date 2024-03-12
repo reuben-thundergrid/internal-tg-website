@@ -127,10 +127,10 @@ export default (props: {
         
         //Edge Cases
         case "hop1":
-            return <>{
-                // console.log(props.wizard.history)
-                props.wizard.goToStep("shipping")
-            }</>
+            return <>
+                {/* {console.log(props.wizard.history)} */}
+                {props.wizard.goToStep("shipping")}
+            </>
         case  "err":
             return <h1 style={{color: "white", display: "flex", justifyContent: "center", alignItems: "center"}}>please talk to some in network ops before proceeding</h1>
         default:

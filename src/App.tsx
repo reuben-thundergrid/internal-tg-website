@@ -14,7 +14,7 @@ const App = () => {
   //Note: There always must be a step between two objects
   const path = ["create", "invoice", "sale", {
     //Sale Type 1
-    "st1": ["st1step0", "st1step1", "st1step2", {
+    "st1": ["st1step0", "st1step1", "st1step12", "st1step13", "st1step2", {
       "cld1step1": ["cld1step1", "lm1step1"],
       "loc1step1": ["loc1step1", "lm1step1"],
       "non1step1": ["non1step1", "non1step2"]

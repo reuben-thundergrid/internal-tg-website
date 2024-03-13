@@ -21,7 +21,10 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Select "Plug & Charge" if not still discussing with the client. All chargers are shipped plug & charge and reconfigured post installation</li>
+          <li>Select "Plug & Charge" if not still discussing with the client. 
+            All chargers are shipped plug & charge and reconfigured post installation. 
+            Because of this, you can update these details without notifying anyone pre installation.
+          </li>
         </ul>      
       </div>
     </>

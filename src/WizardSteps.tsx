@@ -25,9 +25,7 @@ import St1step4 from "./WizardSteps/st1/St1step4.tsx";
 import Phz3step1 from "./WizardSteps/st1/phz3/Phz3step1.tsx";
 import St1step5 from "./WizardSteps/st1/St1step5.tsx";
 import Pub1step1 from "./WizardSteps/st1/pub1/Pub1step1.tsx";
-import Pub1step2 from "./WizardSteps/st1/pub1/Pub1step1.tsx";
 import Prv1step1 from "./WizardSteps/st1/prv1/Prv1step1.tsx";
-import Prv1step2 from "./WizardSteps/st1/prv1/Prv1step1.tsx";
 import Con1step1 from "./WizardSteps/st1/con1/Con1step1.tsx";
 import Sim1step1 from "./WizardSteps/st1/sim1/Sim1step1.tsx";
 import Del1step1 from "./WizardSteps/st1/del1/Del1step1.tsx";
@@ -35,7 +33,7 @@ import St1step6 from "./WizardSteps/st1/St1step6.tsx";
 import St1step7 from "./WizardSteps/st1/St1step7.tsx";
 import St1step8 from "./WizardSteps/st1/St1step8.tsx";
 import St1step9 from "./WizardSteps/st1/St1step9.tsx";
-import Lm1Step1 from "./WizardSteps/st1/lm1/Lm1Step1.tsx";
+import Lm1step1 from "./WizardSteps/st1/lm1/Lm1step1.tsx";
 import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
 
 export default (props: {
@@ -69,7 +67,7 @@ export default (props: {
 
             //Buidling Limit
             case "lm1step1":
-                return <Lm1Step1 {...props}/>;
+                return <Lm1step1 {...props}/>;
 
             //Building Limit 0
             case "non1step2":

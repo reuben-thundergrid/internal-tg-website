@@ -21,13 +21,13 @@ export default (props: {
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#29B964"}} onClick={() => props.wizard.goToStep("lm1step0")}>Cloud</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#29B964"}} onClick={() => props.wizard.goToStep("cld1step1")}>Cloud</Button>
       </div>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#9E7129"}} onClick={() => props.wizard.goToStep("lm1step1")}>Local</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#9E7129"}} onClick={() => props.wizard.goToStep("loc1step1")}>Local</Button>
       </div>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#2A2E34"}} onClick={() => props.wizard.goToStep("lm1step2")}>None</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#2A2E34"}} onClick={() => props.wizard.goToStep("non1step1")}>None</Button>
       </div>
     </div>
   </>

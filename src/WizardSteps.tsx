@@ -17,9 +17,9 @@ import St2step3 from "./WizardSteps/st2/St2step3.tsx";
 import St1step0 from "./WizardSteps/st1/St1step0.tsx";
 import St1step1 from "./WizardSteps/st1/St1step1.tsx";
 import St1step2 from "./WizardSteps/st1/St1step2.tsx";
-import Lm1step0 from "./WizardSteps/st1/lm1/Lm1step0.tsx";
-import Lm1step1 from "./WizardSteps/st1/lm1/Lm1step1.tsx";
-import Lm1step2 from "./WizardSteps/st1/lm1/Lm1step2.tsx";
+import Cld1step1 from "./WizardSteps/st1/cld1/Cld1step1.tsx";
+import Loc1step1 from "./WizardSteps/st1/loc1/Loc1step1.tsx";
+import Non1step1 from "./WizardSteps/st1/non1/Non1step1.tsx";
 import St1step3 from "./WizardSteps/st1/St1step3.tsx";
 import St1step4 from "./WizardSteps/st1/St1step4.tsx";
 import Phz3step1 from "./WizardSteps/st1/phz3/Phz3step1.tsx";
@@ -35,6 +35,7 @@ import St1step6 from "./WizardSteps/st1/St1step6.tsx";
 import St1step7 from "./WizardSteps/st1/St1step7.tsx";
 import St1step8 from "./WizardSteps/st1/St1step8.tsx";
 import St1step9 from "./WizardSteps/st1/St1step9.tsx";
+import Lm1Step1 from "./WizardSteps/st1/lm1/Lm1Step1.tsx";
 
 export default (props: {
     step: TStep;
@@ -58,12 +59,20 @@ export default (props: {
             return <St1step2 {...props}/>;
 
             //Load management 1
-            case "lm1step0":
-                return <Lm1step0 {...props}/>;
+            case "cld1step1":
+                return <Cld1step1 {...props}/>;
+            case "loc1step1":
+                return <Loc1step1 {...props}/>;
+            case "non1step1":
+                return <Non1step1 {...props}/>;
+
+            //Buidling Limit
             case "lm1step1":
-                return <Lm1step1 {...props}/>;
-            case "lm1step2":
-                return <Lm1step2 {...props}/>;
+                return <Lm1Step1 {...props}/>;
+
+            //Building Limit 0
+            case "non1step2":
+                return <Non1step1 {...props}/>;
         
         case "st1step3":
             return <St1step3 {...props}/>;

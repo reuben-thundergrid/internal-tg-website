@@ -15,9 +15,9 @@ const App = () => {
   const path = ["create", "invoice", "sale", {
     //Sale Type 1
     "st1": ["st1step0", "st1step1", "st1step2", {
-      "lm1step0": ["lm1step0"],
-      "lm1step1": ["lm1step1"],
-      "lm1step2": ["lm1step2"]
+      "cld1step1": ["cld1step1", "lm1step1"],
+      "loc1step1": ["loc1step1", "lm1step1"],
+      "non1step1": ["non1step1", "non1step2"]
     }, "st1step3", "st1step4", {
       "phz3step1": ["phz3step1"]
     }, "st1step5", {

@@ -21,8 +21,8 @@ const App = () => {
     }, "st1step3", "st1step4", {
       "phz3step1": ["phz3step1"]
     }, "st1step5", {
-      "pub1step1": ["pub1step1", "pub1step2"],
-      "prv1step1": ["prv1step1", "prv1step2"]
+      "pub1step1": ["pub1step1"],
+      "prv1step1": ["prv1step1"]
     }, "st1step6", "st1step7", "st1step8", {
       "sim1step1": ["sim1step1"],
       "con1step1": ["con1step1"],

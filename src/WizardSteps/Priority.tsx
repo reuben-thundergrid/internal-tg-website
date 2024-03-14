@@ -25,6 +25,7 @@ export default (props: {
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
           <li>Set the Sales Pipeline task priority to communicate the urgency of the sale</li>
           <li>These flags indicate the targeted <b style={{fontFamily:"Segoe UI"}}>dispatch date</b> and <b style={{fontFamily:"Segoe UI"}}>NOT</b> the delivery date</li>
+          <li>The priority starts the date the task is moved into the 'Tender' status</li>
         </ul>
       </div>
     </>

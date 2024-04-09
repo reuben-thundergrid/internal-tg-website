@@ -21,11 +21,10 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>info 1</li>
-          <li>info 2</li>
-          <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>important info</li>
+          <li>The majority of installs only require one Oecan connetion</li>
+          <li>Each cluster will have its own Ocean connection</li>
+          <li>Refer to the defintion earlier</li>
         </ul>
-        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1step0")}>REPEAT!</Button>
       </div>
     </>
   );

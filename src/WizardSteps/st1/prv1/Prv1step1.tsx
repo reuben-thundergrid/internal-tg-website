@@ -21,10 +21,8 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Select "Plug & Charge" if not still discussing with the client. 
-            All chargers are shipped plug & charge and reconfigured post installation. 
-            Because of this, you can update these details without notifying anyone pre installation.
-          </li>
+          <li>Specify the authentication type that the client has requested</li>
+          <li>If this is still being dicussed with the client select "Plug & Charge"</li>
         </ul>      
       </div>
     </>

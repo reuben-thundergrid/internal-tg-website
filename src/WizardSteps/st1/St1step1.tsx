@@ -19,7 +19,7 @@ export default (props: {
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
           <li>In the new Ocean connection task, fill out the custom field <b>Site Address</b></li>
-          <li>This will go into Ocean and indicate where the chargers are installed</li>
+          <li>This is to indicate where the chargers are installed</li>
           <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>If possible please specify a house number</li>
         </ul>
       </div>

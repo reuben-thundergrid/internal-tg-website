@@ -23,6 +23,7 @@ export default (props: {
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
           <li>Enter cluster limit into custom field "Cluster Limit"</li>
           <li>This will be the chargers direct upstream distribution board rating in amps</li>
+          <li>For home chargers this is often the same as the building limit</li>
         </ul>
       </div>
     </>

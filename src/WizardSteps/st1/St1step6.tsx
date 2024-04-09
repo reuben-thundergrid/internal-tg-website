@@ -23,6 +23,7 @@ export default (props: {
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
           <li>Specify the owner of the charger</li>
           <li>This will dictate how authentication works so if unsure please talk to someone in Network Ops</li>
+          <li>Place any contact details in the description under "Station Owner Contact Details"</li>
         </ul>
       </div>
     </>

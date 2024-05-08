@@ -54,7 +54,7 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Move the Sales Pipeline task into the <b>Tender</b> status</li>
+          <li>Move the Sales Marina task into the <b>Tender</b> status</li>
           <li>Sit Back and Relax! You're all done!</li>
         </ul>
       </div>

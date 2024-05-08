@@ -21,9 +21,9 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
+          <li>Create another linked task to add another Ocean connection</li>
           <li>The majority of installs only require one Oecan connetion</li>
-          <li>Each cluster will have its own Ocean connection</li>
-          <li>Refer to the defintion earlier</li>
+          <li>Each cluster will have its own Ocean connection. Refer to the defintion earlier for more information</li>
         </ul>
       </div>
     </>

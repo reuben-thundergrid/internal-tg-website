@@ -1,4 +1,6 @@
-# Test
+# To Do
+* Add FAQ
+* Show current step in URL
 
 # Getting Started with Create React App
 

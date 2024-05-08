@@ -20,7 +20,7 @@ export default (props: {
     </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
       <ul style={{color: "white", fontSize: "3em", marginLeft: "0.4em"}}>
-        <li>Create a task in the Network Ops Space under Ocean Connections</li>
+        <li>Create a task in the Ocean Plus space under Ocean Connections</li>
         <li>The name of the task will be the name created in Ocean</li>
         <li>This task will be in the <i>Dormant</i> list</li>
         <li>Mention this task under "Ocean Connection(s)" in the Sales task</li>

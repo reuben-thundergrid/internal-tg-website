@@ -22,7 +22,7 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Create a new task in the sales pipeline</li>
+          <li>Create a new task in the Sales Marina ➡️ Main list inside ClickUp</li>
           <li>Make the name of the task the same as the deal in Hubspot</li>
           {/* <li style={{border: "1px solid red", borderRadius: "15px", padding: "0.2em"}}>Assign yourself to the task</li> */}
         </ul>

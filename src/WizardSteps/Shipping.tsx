@@ -21,7 +21,7 @@ export default (props: {
     </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
       <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-        <li>Specify <b>Delivery Address</b> in description of Sales Pipeline task</li>
+        <li>Specify the <b>Delivery Address</b> in description of the Sales Marina task</li>
         <li>If shipping to the installer & they are specified in the Ocean connection. Simply put "Shipping to installer"</li>
       </ul>
     </div>

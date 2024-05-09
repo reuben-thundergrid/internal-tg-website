@@ -21,7 +21,7 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
-          <li>Fill out the custom filed Building Limit</li>
+          <li>Fill out the custom field "Building Limit"</li>
           <li>Specify the power source that the energy meter will monitor</li>
         </ul>
       </div>

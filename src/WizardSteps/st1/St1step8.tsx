@@ -21,16 +21,19 @@ export default (props: {
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#7C4DFF"}} onClick={() => props.wizard.goToStep("sim1step1")}>SIM</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#7C4DFF"}} onClick={() => props.wizard.goToStep("sim1step1")}>SIM in charger</Button>
       </div>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#BF55EC"}} onClick={() => props.wizard.goToStep("sim1step1")}>Wifi Existing</Button>
+        <p>wifi exisitng: connecting to an exisitng wifi network</p>
       </div>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("del1step1")}>Multiple</Button>
+        <p>multiple options selected</p>
       </div>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("con1step1")}>Bespoke/Gateway/Ethernet/WIFI Thundergrid</Button>
+        <p>wifi thundergrid: a wifi network created by thundergrid</p>
       </div>
     </div>
   </>

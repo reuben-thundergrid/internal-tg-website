@@ -19,7 +19,8 @@ const FAQ = () => {
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center", 
-        padding: "1em"
+        padding: "1em",
+        width: "70%"
     }
 
     return(

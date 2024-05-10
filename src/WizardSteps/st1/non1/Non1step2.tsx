@@ -9,7 +9,7 @@ import StepHeader from "../../../Components/StepHeader.tsx"
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 
-export default (props: {
+const Non1step2 = (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
@@ -28,3 +28,4 @@ export default (props: {
   );
 };
 
+export default Non1step2;

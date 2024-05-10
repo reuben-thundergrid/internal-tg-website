@@ -8,7 +8,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 
-export default (props: {
+const St3step0 = (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
@@ -32,3 +32,4 @@ export default (props: {
   );
 };
 
+export default St3step0;

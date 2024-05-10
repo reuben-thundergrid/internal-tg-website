@@ -10,7 +10,7 @@ import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 import { Scale } from "@mui/icons-material";
 
-export default (props: {
+const Sale = (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
@@ -117,3 +117,4 @@ export default (props: {
   );
 };
 
+export default Sale;

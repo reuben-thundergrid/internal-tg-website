@@ -35,8 +35,8 @@ import St1step8 from "./WizardSteps/st1/St1step8.tsx";
 import St1step9 from "./WizardSteps/st1/St1step9.tsx";
 import Lm1step1 from "./WizardSteps/st1/lm1/Lm1step1.tsx";
 import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
-import St1Step12 from "./WizardSteps/st1/St1Step12.tsx";
-import St1Step13 from "./WizardSteps/st1/St1Step13.tsx";
+import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
+import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
 
 export default (props: {
     step: TStep;

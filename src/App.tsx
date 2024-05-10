@@ -84,13 +84,14 @@ const App = () => {
 
   return (
     <>
+      {console.log(step)}
       <div style={{display: "grid"}}>
         <WizardSteps {...{ step, wizard}}/>
       </div>
-      <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "fixed", bottom: 0}}>
-        {step !== "create" ? <Button variant="contained" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
-        {!["create", "invoice"].includes(step.toString()) ? <Button variant="contained" endIcon={<HomeIcon />} style={{margin: "1em"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
-        {showNextButton() ? <Button variant="contained" color="success" endIcon={<ArrowForwardIcon />} style={{margin: "1em"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
+      <div style={{display: "flex", flexDirection: "row", justifyContent: "center", width: "100%", position: "fixed", bottom: 0}}>
+        {step !== "create" ? <Button variant="contained" endIcon={<KeyboardBackspaceIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={() => wizard.previousStep()}>Back Step</Button> : <></>}
+        {!["create", "invoice"].includes(step.toString()) ? <Button variant="contained" endIcon={<HomeIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={() => wizard.initialize()}>Home</Button> : <></>}
+        {showNextButton() ? <Button variant="contained" color="success" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={() => wizard.nextStep()}>Next Step</Button> : <></>}
       </div>
     </>
   );

@@ -20,10 +20,10 @@ export default (props: {
         <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
-        <ul style={{color: "white", fontSize: "3.5em", marginLeft: "0.4em"}}>
+        <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>
           <li>Create a new task inside Ocean Plus ➡️ Ocean Connections ➡️ Sales Pipeline End</li>
           <li>Mention this task inside the Sales task description under the "Ocean Connection(s)" text</li>
-          <li style={{border: "1px solid red", borderRadius: "15px", paddingLeft: "1em", paddingBottom: "0.2em"}}>Create a separate ocean connection for each cluster</li>
+          <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>Create a separate ocean connection for each cluster</li>
           <li>The name of the task will become the name in Ocean</li>
         </ul>
         <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtube.com")}>HOW TO CREATE A LINKED TASK</Button>
@@ -31,4 +31,3 @@ export default (props: {
     </>
   );
 };
-

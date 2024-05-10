@@ -2,3 +2,33 @@ body{
     background-color:black;
     font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+Button:hover{ transform: scale(1.1); }
+
+
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+.StepHeader {
+    animation: 1.5s fadeInUp;
+}
+
+li {
+  padding: 0.2em;
+}
+
+ul {
+  font-size: 2em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}

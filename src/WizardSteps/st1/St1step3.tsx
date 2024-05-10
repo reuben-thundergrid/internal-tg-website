@@ -20,7 +20,7 @@ export default (props: {
         <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step3Gif} />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
-        <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
+        <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Enter cluster limit into custom field "Cluster Limit"</li>
           <li>This will be the chargers direct upstream distribution board rating in amps</li>
           <li>For home chargers this is often the same as the building limit</li>

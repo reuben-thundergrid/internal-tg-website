@@ -17,12 +17,12 @@ export default (props: {
   return (
     <>
       <StepHeader>specify land owner</StepHeader>
-      <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step7Gif} />
-        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step7Gif2} />
+      <div style={{display: "flex", flexDirection: "column", gridRowStart: 2, gridColumnStart: 2, justifyContent: "center", gap: "1em"}}>
+        <img style={{borderRadius: "1em"}} src={st1step7Gif} />
+        <img style={{borderRadius: "1em"}} src={st1step7Gif2} />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
-        <ul style={{color: "white", fontSize: "4em", marginLeft: "0.4em"}}>
+        <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>For commercial sites this is usually the same as the Station Owner or the entity responsible for the facility</li>
           <li>For home chargers this is usually the home owner</li>
           <li>Place any contact details in the description under "Land Owner Contact Details"</li>

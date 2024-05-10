@@ -17,7 +17,7 @@ const St1step0 = (props: {
     <>
       <StepHeader>create new ocean connection in main and link the task</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} />
+        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} alt="ClickUp GIF" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>

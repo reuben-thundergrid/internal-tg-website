@@ -58,7 +58,7 @@ const Sale = (props: {
           <li>One Sales Marina task can have multiple Ocean Connections</li>
         </ul>
       </div>
-        <img style={{borderRadius: "1em"}} src={saleType}/>
+        <img style={{borderRadius: "1em"}} src={saleType} alt="ClickUp GIF" />
     </div>
 
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center", marginBottom: "0.5em"}}>Select Sale Type in Clickup Task Custom Field</h2>

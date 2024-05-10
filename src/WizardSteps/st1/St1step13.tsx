@@ -14,7 +14,7 @@ const St1step13 = (props: {
     <>
       <StepHeader>specify installer</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={st1step13Gif} />
+        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={st1step13Gif} alt="ClickUp GIF" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>

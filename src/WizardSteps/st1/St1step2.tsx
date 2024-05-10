@@ -18,7 +18,7 @@ const St1step2 = (props: {
     <StepHeader>is load management required?</StepHeader>
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Specify in Custom Field "Load Management Type"</h2>
     <div style={{gridArea: "2/1/3/3", display: "flex", justifyContent: "center", alignItems: "center"}}>
-      <img style={{margin: "1em", borderRadius: "1em"}} src={st1step2Gif} />
+      <img style={{margin: "1em", borderRadius: "1em"}} src={st1step2Gif} alt="ClickUp GIF" />
     </div>
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>

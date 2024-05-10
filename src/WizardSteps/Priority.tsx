@@ -15,8 +15,8 @@ const Priority = (props: {
     <>
       <StepHeader>specify priority</StepHeader>
       <div style={{display: "flex", flexDirection: "column", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={priorityGif} />
-        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em", scale: "70%"}} src={priorityPng} />
+        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={priorityGif} alt="ClickUp GIF" />
+        <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em", scale: "70%"}} src={priorityPng} alt="ClickUp GIF Two" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>

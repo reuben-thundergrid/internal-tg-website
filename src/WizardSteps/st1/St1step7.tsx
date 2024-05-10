@@ -15,8 +15,8 @@ const St1step7 = (props: {
     <>
       <StepHeader>specify land owner</StepHeader>
       <div style={{display: "flex", flexDirection: "column", gridRowStart: 2, gridColumnStart: 2, justifyContent: "center", gap: "1em"}}>
-        <img style={{borderRadius: "1em"}} src={st1step7Gif} />
-        <img style={{borderRadius: "1em"}} src={st1step7Gif2} />
+        <img style={{borderRadius: "1em"}} src={st1step7Gif} alt="ClickUp GIF" />
+        <img style={{borderRadius: "1em"}} src={st1step7Gif2} alt="ClickUp GIF Two" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>

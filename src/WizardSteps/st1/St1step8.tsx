@@ -50,7 +50,7 @@ const St1step8 = (props: {
     <StepHeader>specify charger connetivity method</StepHeader>
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Specify in Custom Field "Charger Connectivity"</h2>  
     <div style={{gridArea: "2/1/3/3", display: "flex", justifyContent: "center", alignItems: "center"}}>
-      <img style={{margin: "1em", borderRadius: "1em"}} src={st1step8Gif} />
+      <img style={{margin: "1em", borderRadius: "1em"}} src={st1step8Gif} alt="ClickUp GIF" />
     </div>
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
 

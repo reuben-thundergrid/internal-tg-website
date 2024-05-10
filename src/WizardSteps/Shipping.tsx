@@ -16,8 +16,8 @@ const Shipping = (props: {
     <>
     <StepHeader>specify shipping</StepHeader>
     <div style={{display: "flex", flexDirection: "column", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
-      <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={shippingGif}/>
-      <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={shipping2Gif}/>
+      <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={shippingGif} alt="ClickUp GIF" />
+      <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={shipping2Gif} alt="ClickUp GIF Two" />
     </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
       <ul style={{color: "white", marginLeft: "0.4em"}}>

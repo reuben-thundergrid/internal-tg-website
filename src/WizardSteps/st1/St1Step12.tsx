@@ -21,7 +21,7 @@ export default (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
-          <li>Specify the total number of chargers in the cluster</li>
+          <li>Specify the total number of chargers in the current ocean connection / cluster</li>
         </ul>
       </div>
     </>

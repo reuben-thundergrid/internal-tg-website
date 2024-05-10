@@ -43,7 +43,7 @@ const FAQ = () => {
                 <h4 style={{ ...answer}}>Answer: In the case of multiple invoices or split invoices. Enter thundergrid.click/split in the Invoice custom field. Link both invoices in the description under the Other Notes section.</h4>
             </div>
             <div style={{ ...faqBox}}>
-                <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for on Sales Marina task</h3>
+                <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for one Sales Marina task</h3>
                 <h4 style={{ ...answer}}>Answer: If for example you have a New Ocean Connection and Modify Ocean Connection in one sale, you will have to create two Sales Marina tasks. This scenario is not support by the system.</h4>
             </div>
             <div style={{ ...faqBox}}>

@@ -2,9 +2,6 @@ import React from "react";
 import priorityGif from "../Gif/priority.gif";
 import priorityPng from "../Gif/priority.png";
 
-import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-
 import StepHeader from "../Components/StepHeader.tsx"
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";

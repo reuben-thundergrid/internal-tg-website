@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import finishGif from "../Gif/finish.gif";
-
-import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import useWindowSize from "react-use/lib/useWindowSize"
 import Confetti from "react-confetti"

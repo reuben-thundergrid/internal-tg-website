@@ -8,7 +8,6 @@ import Button from '@mui/material/Button';
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
-import { Scale } from "@mui/icons-material";
 
 const Sale = (props: {
   step: TStep;

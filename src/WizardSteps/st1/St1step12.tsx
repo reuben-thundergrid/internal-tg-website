@@ -1,9 +1,6 @@
 import React from "react";
 import st2step3Gif from "../../Gif/st2step3.gif";
 
-import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-
 import StepHeader from "../../Components/StepHeader.tsx"
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";

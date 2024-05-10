@@ -38,7 +38,7 @@ import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
 import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
 import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
 
-export default (props: {
+const WizardSteps = (props: {
     step: TStep;
     wizard: IWizard;
   }) => {
@@ -147,3 +147,5 @@ export default (props: {
             return <p style={{color: "white"}}>Step does not exist</p>;
     }
 };
+
+export default WizardSteps;

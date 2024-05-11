@@ -33,7 +33,7 @@ const FAQ = () => {
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: How do I request items to be sent before filling out all the information required?</h3>
-                <h4 style={{ ...answer}}>Answer: In certain scenarios we may want to send gear as soon as possible to someone like the switchboard maker.</h4>
+                <h4 style={{ ...answer}}>Answer: In certain scenarios we may want to send gear as soon as possible to someone like the switchboard maker. Mention @Fulfilment in the Sales Marina task, let them know the items that need to be sent and the delivery address if applicable.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What happens if details change after the task is in progress?</h3>

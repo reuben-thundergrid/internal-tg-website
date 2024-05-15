@@ -53,6 +53,12 @@ const FAQ = () => {
                 <h4 style={{ ...answer}}>If an Ocean connection has already been created and linked you must archive the task. If the sales task needs to be deleted in this situation the linked Ocean connection and actual Ocean location need to be deleted.</h4>
                 <h4 style={{ ...answer}}>If linked shipping tasks exist with information in them the sales task must be archived as we need to keep this information for historical purposes. If there are shipping tasks but no information inside them, make sure to delete them before deleting the sales task.</h4>
             </div>
+            <div style={{ ...faqBox}}>
+                <h3 style={{ ...question}}>Question: I have one sale but only one Ocean connection is ready for the gear?</h3>
+                <h4 style={{ ...answer}}>Answer: If the invoices are split per Ocean connection just create a new `Sales Piepline End` task per invoice.</h4>
+                <h4 style={{ ...answer}}>If the invoices are combined delineate in a comment what gear is going first and mention @Fulfilment.</h4>
+                <h4 style={{ ...answer}}>Make sure all Ocean connections are created even if they are placeholder (not completely filled out yet). They will be set up as a dependency which will prevent the task from being closed until all Ocean connections are commissioned.</h4>
+            </div>
         </div>
     </>
     );

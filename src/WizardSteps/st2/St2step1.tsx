@@ -8,6 +8,7 @@ import StepHeader from "../../Components/StepHeader.tsx"
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
+// import YoutubeEmbed from "../../Components/YoututbeEmbed.js";
 
 const St2step1 = (props: {
   step: TStep;
@@ -25,7 +26,8 @@ const St2step1 = (props: {
           <li>Set the Ocean connection task back to first status</li>
           <li style={{backgroundColor: "rgba(0, 187, 20, 0.31)", borderRadius: "15px", padding: "0.2em"}}>When mentioning a task, type to search. You can search by a task's custom ID</li>
         </ul>
-        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtube.com")}>GUIDE: How To Mention A Task</Button>
+        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtu.be/s0c4SQmFQQE")}>GUIDE: How To Mention A Task</Button>
+        {/* <YoutubeEmbed embedId="s0c4SQmFQQE?si=hWjzBMz-7NZEftLV" /> */}
       </div>
     </>
   );

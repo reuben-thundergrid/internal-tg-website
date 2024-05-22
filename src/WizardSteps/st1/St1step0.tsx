@@ -3,8 +3,8 @@ import React from "react";
 
 import YoutubeEmbed from "../../Components/YoututbeEmbed.js";
 
-import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+// import Button from '@mui/material/Button';
+// import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import StepHeader from "../../Components/StepHeader.tsx"
 
@@ -29,7 +29,7 @@ const St1step0 = (props: {
           <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>Create a separate ocean connection for each cluster</li>
           <li>The name of the task will become the name in Ocean</li>
         </ul>
-        <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtube.com")}>HOW TO CREATE A LINKED TASK</Button>
+        {/* <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://youtube.com")}>HOW TO CREATE A LINKED TASK</Button> */}
       </div>
     </>
   );

@@ -18,19 +18,19 @@ const Home = () => {
             <StepHeader>welcome</StepHeader>
             <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "1em"}}>
                 <div style={{border: "1px solid green", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <h3 style={{color: "white", padding: "1em"}}>Handing over a sale to fulfilment? Follow this wizard which will walk you through the steps.</h3>
+                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Handing over a sale to fulfilment? Follow this wizard which will walk you through the steps.</h3>
                     <Button variant="contained" color="success" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleWizardClick}>Go To Wizard</Button>
                 </div>
                 <div style={{border: "1px solid lightblue", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <h3 style={{color: "white", padding: "1em"}}>Learn more about commonly asked questions and edge cases</h3>
+                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Learn more about commonly asked questions and edge cases</h3>
                     <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleFAQClick}>Go To FAQ</Button>
                 </div>
                 <div style={{border: "1px solid orange", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <h3 style={{color: "white", padding: "1em"}}>Place your feedback here</h3>
+                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Place your feedback here</h3>
                     <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleFeedback}>Go To Feedback Form</Button>
                 </div>
                 <div style={{border: "1px solid pink", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <h3 style={{color: "white", padding: "1em"}}>Read the space rules</h3>
+                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Read the space rules</h3>
                     <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleRules}>Go To Space Rules Here</Button>
                 </div>
                 <div style={{paddingBottom: "1em"}}></div>

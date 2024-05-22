@@ -56,7 +56,7 @@ const FAQ = () => {
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: I have one sale but only one Ocean connection is ready for the gear?</h3>
                 <h4 style={{ ...answer}}>Answer: If the invoices are split per Ocean connection just create a new `Sales Piepline End` task per invoice.</h4>
-                <h4 style={{ ...answer}}>If the invoices are combined delineate in a comment what gear is going first and mention @Fulfilment.</h4>
+                <h4 style={{ ...answer}}>If the invoices are combined delineate which Ocean Connections are ready to fulifll & the gear that will be associated that connection in a comment. Mention @Fulfilment.</h4>
                 <h4 style={{ ...answer}}>Make sure all Ocean connections are created even if they are placeholder (not completely filled out yet). They will be set up as a dependency which will prevent the task from being closed until all Ocean connections are commissioned.</h4>
             </div>
         </div>

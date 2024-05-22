@@ -11,7 +11,8 @@ const Home = () => {
     function handleWizardClick() { navigate("/wizard"); }
     function handleFAQClick() { navigate("/faq"); }
     function handleFeedback() { window.open("https://landisgyr.sharepoint.com/:w:/r/sites/ext-ws-Thundergrid/Shared%20Documents/Research%20and%20Development/Clickup%20Changes%20Feedback.docx?d=w58017d55a4e14271a08ac8288da2eb58&csf=1&web=1&e=gCjPXu")}
-  
+    function handleRules() { navigate("/rules"); }
+
     return (
         <>
             <StepHeader>welcome</StepHeader>
@@ -28,6 +29,11 @@ const Home = () => {
                     <h3 style={{color: "white", padding: "1em"}}>Place your feedback here</h3>
                     <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleFeedback}>Go To Feedback Form</Button>
                 </div>
+                <div style={{border: "1px solid pink", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <h3 style={{color: "white", padding: "1em"}}>Read the space rules</h3>
+                    <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleRules}>Go To Space Rules Here</Button>
+                </div>
+                <div style={{paddingBottom: "1em"}}></div>
             </div>                     
         </>
     );

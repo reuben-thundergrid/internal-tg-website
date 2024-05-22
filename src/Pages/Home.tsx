@@ -18,7 +18,7 @@ const Home = () => {
             <StepHeader>welcome</StepHeader>
             <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "1em"}}>
                 <div style={{border: "1px solid green", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Handing over a sale to fulfilment? Follow this wizard which will walk you through the steps.</h3>
+                    <h3 style={{color: "white", padding: "1em", margin: "0"}}>Handing over a sale to fulfilment? Follow this wizard which will walk you through the steps</h3>
                     <Button variant="contained" color="success" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleWizardClick}>Go To Wizard</Button>
                 </div>
                 <div style={{border: "1px solid lightblue", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>

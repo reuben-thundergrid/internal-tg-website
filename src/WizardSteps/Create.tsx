@@ -24,6 +24,8 @@ const Create = (props: {
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Create a new task in the Sales Marina ➡️ Main list inside ClickUp</li>
           <li>Make the name of the task the same as the deal in Hubspot</li>
+          <li>You will be the assignee of the task. This should be done automatically</li>
+          <li>Make sure to use the default template when creating your task</li>
         </ul>
         <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => window.open("https://app.clickup.com/6958308/v/l/6-901601362733-1")}>Open Clickup</Button>
       </div>

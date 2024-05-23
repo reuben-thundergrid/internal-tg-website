@@ -29,23 +29,23 @@ const FAQ = () => {
         <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "1em", margin: "1em"}}>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: How do I change the urgency of an order?</h3>
-                <h4 style={{ ...answer}}>Answer: Mention @Fulfilment in the Sales Marina task. Mention the new date that the gear is needed by. If no reply is recieved DM someone in Fulfilment.</h4>
+                <h4 style={{ ...answer}}>Answer: Mention @Fulfilment in the Sales Marina task activity section. Mention the new date that the gear is needed. If no reply is received DM someone in Fulfilment.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: How do I request items to be sent before filling out all the information required?</h3>
-                <h4 style={{ ...answer}}>Answer: In certain scenarios we may want to send gear as soon as possible to someone like the switchboard maker. Mention @Fulfilment in the Sales Marina task, let them know the items that need to be sent and the delivery address if applicable.</h4>
+                <h4 style={{ ...answer}}>Answer: In certain scenarios, we may want to send gear as soon as possible to someone like the switchboard maker. Mention @Fulfilment in the Sales Marina task activity section, and let them know the items that need to be sent and the delivery address if applicable.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What happens if details change after the task is in progress?</h3>
-                <h4 style={{ ...answer}}>Answer: Move the task back to the Tender status. Mention @Fulfilment in the Sales Marina task. Outline what has changed. Follow thundergrid.click/wizard as if it was a new order to ensure everything that needs to be filled out is.</h4>
+                <h4 style={{ ...answer}}>Answer: Move the task back to the Tender status. Mention @Fulfilment in the Sales Marina task activity section. Outline what has changed. Follow thundergrid.click/wizard as if it was a new order to ensure everything that needs to be filled out is.</h4>
             </div>
             <div style={{ ...faqBox}}>
-                <h3 style={{ ...question}}>Question: What do I do if I have multiple invoice for one sale?</h3>
+                <h3 style={{ ...question}}>Question: What do I do if I have multiple invoices for one sale?</h3>
                 <h4 style={{ ...answer}}>Answer: In the case of multiple invoices or split invoices. Enter thundergrid.click/split in the Invoice custom field. Link both invoices in the description under the Other Notes section.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for one Sales Marina task</h3>
-                <h4 style={{ ...answer}}>Answer: If for example you have a New Ocean Connection and Modify Ocean Connection in one sale, you will have to create two Sales Marina tasks. This scenario is not support by the system.</h4>
+                <h4 style={{ ...answer}}>Answer: If for example, you have a New Ocean Connection and Modify Ocean Connection in one sale, you will have to create two Sales Marina tasks. This scenario is not supported by the system.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: How do I cancel a sale?</h3>
@@ -56,7 +56,7 @@ const FAQ = () => {
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: I have one sale but only one Ocean connection is ready for the gear?</h3>
                 <h4 style={{ ...answer}}>Answer: If the invoices are split per Ocean connection just create a new `Sales Piepline End` task per invoice.</h4>
-                <h4 style={{ ...answer}}>If the invoices are combined delineate which Ocean Connections are ready to fulifll & the gear that will be associated that connection in a comment. Mention @Fulfilment.</h4>
+                <h4 style={{ ...answer}}>If the invoices are combined delineate which Ocean Connections are ready to fulfil & the gear that will be associated with that connection in a comment. Mention @Fulfilment.</h4>
                 <h4 style={{ ...answer}}>Make sure all Ocean connections are created even if they are placeholder (not completely filled out yet). They will be set up as a dependency which will prevent the task from being closed until all Ocean connections are commissioned.</h4>
             </div>
         </div>

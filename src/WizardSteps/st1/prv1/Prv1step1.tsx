@@ -19,7 +19,7 @@ const Prv1step1 = (props: {
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Specify the authentication type that the client has requested</li>
-          <li>If this is still being dicussed with the client select "Plug & Charge"</li>
+          <li>If this is still being discussed with the client select "Plug & Charge"</li>
         </ul>      
       </div>
     </>

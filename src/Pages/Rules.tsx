@@ -33,7 +33,7 @@ const Rules = () => {
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>No changes are to be made without permission</h3>
-                <h4 style={{ ...answer}}>This applys to the Ocean Plus, Fulfilment Plus & Sales Marina Spaces.</h4>
+                <h4 style={{ ...answer}}>This applies to the Ocean Plus, Fulfilment Plus & Sales Marina Spaces.</h4>
                 <h4 style={{ ...answer}}>No modifying or adding custom fields. Be careful to not add items to dropdown custom fields.</h4>
                 <h4 style={{ ...answer}}>No editing or making public views. Use the private views feature of ClickUp if you would like a custom view. Default views are protected.</h4>
                 <h4 style={{ ...answer}}>No renaming of anything.</h4>
@@ -41,7 +41,11 @@ const Rules = () => {
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>No duplicating an existing task to make a new one</h3>
                 <h4 style={{ ...answer}}>Use the template feature of ClickUp if you need an easily replicable format.</h4>
-                <h4 style={{ ...answer}}>Duplicating tasks can cause confusion dependinging on what has been copied.</h4>
+                <h4 style={{ ...answer}}>Duplicating tasks can cause confusion depending on what has been copied.</h4>
+            </div>
+            <div style={{ ...faqBox}}>
+                <h3 style={{ ...question}}>Use the 'Other Request' list if you are unsure which workflow applies</h3>
+                <h4 style={{ ...answer}}>Any requests that do not have a documented workflow use the 'Other Request' list</h4>
             </div>
         </div>
     </>

@@ -37,6 +37,7 @@ import Lm1step1 from "./WizardSteps/st1/lm1/Lm1step1.tsx";
 import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
 import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
 import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
+import Phz2step1 from "./WizardSteps/st1/phz2/Phz2step1.tsx";
 
 const WizardSteps = (props: {
     step: TStep;
@@ -87,6 +88,10 @@ const WizardSteps = (props: {
             //Phase Rotations
             case "phz3step1":
                 return <Phz3step1 {...props}/>
+
+            //Multiple Phases
+            case "phz2step1":
+                return <Phz2step1 {...props}/>
 
         case "st1step5":
             return <St1step5 {...props} />

@@ -19,7 +19,8 @@ const Wizard = () => {
       "loc1step1": ["loc1step1", "lm1step1"],
       "non1step1": ["non1step1", "non1step2"]
     }, "st1step3", "st1step4", {
-      "phz3step1": ["phz3step1"]
+      "phz3step1": ["phz3step1"],
+      "phz2step1": ["phz2step1"]
     }, "st1step5", {
       "pub1step1": ["pub1step1"],
       "prv1step1": ["prv1step1"]
@@ -68,6 +69,8 @@ const Wizard = () => {
     return getThing(arr[i], chain.slice(1));
   }
 
+  //Function to decide if next button should be shown
+  //Next button not shown if next step is an object (multichoice)
   function showNextButton(){
     if(step === "finish"){
       return false;

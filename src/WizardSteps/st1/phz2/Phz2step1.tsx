@@ -11,12 +11,13 @@ const Phz2step1 = (props: {
 }) => {
   return (
     <>
-      <StepHeader>specify if phase rotations are required - Multiple</StepHeader>
+      <StepHeader>specify amount of chargers single and three phase</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
         <img style={{gridArea: "2/2/3/3", margin: "1em", borderRadius: "1em"}} src={phz3step1Gif} alt="ClickUp GIF" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
+          <li>Specify in the description under 'Other Notes' how many chargers will be single and three phase</li>
           <li>Check the Phase Rotations Required custom field box if the installer will be rotating the phases to the chargers</li>
         </ul>
       </div>

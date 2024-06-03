@@ -29,7 +29,7 @@ const St1step4 = (props: {
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#CE0000"}} onClick={() => props.wizard.goToStep("phz3step1")}>3 Phase</Button>
       </div>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("phz2step1")}>Multiple</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("phz2step1")}>Mixture</Button>
       </div>
     </div>
   </>

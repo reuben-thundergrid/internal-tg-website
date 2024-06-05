@@ -24,7 +24,7 @@ const St1step0 = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>
-          <li>Create a new task inside Ocean Plus ➡️ Ocean Connections ➡️ Sales Pipeline End</li>
+          <li>Create a new task inside Ocean Plus ➡️ Ocean Connections ➡️ Main</li>
           <li>Mention this task inside the Sales task description under the "Ocean Connection(s)" text</li>
           <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>Create a separate ocean connection for each cluster</li>
           <li>The name of the task will become the name in Ocean</li>

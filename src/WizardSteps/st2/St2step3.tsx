@@ -19,6 +19,7 @@ const St2step3 = (props: {
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Update total number of charger etc...</li>
+          <li>Update all details in the Ocean Connection that have changed</li>
         </ul>
       </div>
     </>

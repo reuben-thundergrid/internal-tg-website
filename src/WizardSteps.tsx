@@ -38,6 +38,7 @@ import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
 import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
 import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
 import Phz2step1 from "./WizardSteps/st1/phz2/Phz2step1.tsx";
+import Mixstep1 from "./WizardSteps/st1/mix1/Mix1step1.tsx";
 
 const WizardSteps = (props: {
     step: TStep;
@@ -71,6 +72,8 @@ const WizardSteps = (props: {
                 return <Loc1step1 {...props}/>;
             case "non1step1":
                 return <Non1step1 {...props}/>;
+            case "mix1step1":
+                return <Mixstep1 {...props} />;
 
             //Buidling Limit
             case "lm1step1":

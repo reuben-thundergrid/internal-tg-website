@@ -31,6 +31,9 @@ const St1step2 = (props: {
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#2A2E34"}} onClick={() => props.wizard.goToStep("non1step1")}>None</Button>
       </div>
+      <div>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#3397DD"}} onClick={() => props.wizard.goToStep("mix1step1")}>Local + Static</Button>
+      </div>
     </div>
   </>
   );

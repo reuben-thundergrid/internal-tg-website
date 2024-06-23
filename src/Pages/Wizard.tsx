@@ -17,7 +17,8 @@ const Wizard = () => {
     "st1": ["st1step0", "st1step1", "st1step12", "st1step13", "st1step2", {
       "cld1step1": ["cld1step1", "lm1step1"],
       "loc1step1": ["loc1step1", "lm1step1"],
-      "non1step1": ["non1step1", "non1step2"]
+      "non1step1": ["non1step1", "non1step2"],
+      "mix1step1": ["mix1step1", "lm1step1"]
     }, "st1step3", "st1step4", {
       "phz3step1": ["phz3step1"],
       "phz2step1": ["phz2step1"]

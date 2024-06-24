@@ -20,6 +20,7 @@ const St1step13 = (props: {
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Select the installer from the custom field installer dropdown</li>
           <li>Place any contact details in the description under "Installer Contact Details"</li>
+          <li>The database of installers and their address can be found in Gosweetspot</li>
           <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>If the installer is not in the list, select "To Be Added" and mention @Fulfilment in the comments with the name of the installer</li>
         </ul>
       </div>

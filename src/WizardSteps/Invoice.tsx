@@ -17,8 +17,8 @@ const Invoice = (props: {
       </div>
     <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}> {/*info*/}
       <ul style={{color: "white", marginLeft: "0.4em"}}>
-        <li>Paste the URL or the invoice into the invoice custom field</li>
-        <li>Make sure the invoice is accurate as this will determine what items are shipped</li>
+        <li>Paste a URL to the xero list into the equipment list custom field</li>
+        <li>Make sure the xero list is accurate as this will determine what items are shipped</li>
         <li>For home charging programs use the format <i>thundergrid.click/ko</i> in the invoice custom field</li>
       </ul>
     </div>

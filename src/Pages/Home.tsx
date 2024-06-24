@@ -10,7 +10,7 @@ const Home = () => {
 
     function handleWizardClick() { navigate("/wizard"); }
     function handleFAQClick() { navigate("/faq"); }
-    function handleFeedback() { window.open("https://landisgyr.sharepoint.com/:w:/r/sites/ext-ws-Thundergrid/Shared%20Documents/Research%20and%20Development/Clickup%20Changes%20Feedback.docx?d=w58017d55a4e14271a08ac8288da2eb58&csf=1&web=1&e=gCjPXu")}
+    function handleFeedback() { window.open("https://landisgyr.sharepoint.com/:w:/r/sites/ext-ws-Thundergrid/Shared%20Documents/Research%20and%20Development/Clickup%20Changes%20Feedback%20V2.docx?d=wce5c5ac4796848e6b78d46b3d8633c29&csf=1&web=1&e=yubbCs")}
     function handleRules() { navigate("/rules"); }
 
     return (

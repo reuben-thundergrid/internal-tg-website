@@ -33,7 +33,7 @@ const Rules = () => {
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>No changes are to be made without permission</h3>
-                <h4 style={{ ...answer}}>This applies to the Ocean Plus, Fulfilment Plus & Sales Marina Spaces.</h4>
+                <h4 style={{ ...answer}}>This applies to the Ocean Plus, Fulfilment Plus & Products & Services Spaces.</h4>
                 <h4 style={{ ...answer}}>No modifying or adding custom fields. Be careful to not add items to dropdown custom fields.</h4>
                 <h4 style={{ ...answer}}>No editing or making public views. Use the private views feature of ClickUp if you would like a custom view. Default views are protected.</h4>
                 <h4 style={{ ...answer}}>No renaming of anything.</h4>

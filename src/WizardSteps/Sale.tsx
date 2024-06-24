@@ -55,7 +55,7 @@ const Sale = (props: {
         <ul style={{textAlign: "center", listStyle: "none", gap: "0", fontSize: "1em"}}>
           <li>Each local load management cluster will have its own Ocean Connection</li>
           <li>DC Chargers can be added to existing Ocean Connections regardless of which power distribution they are on</li>
-          <li>One Sales Marina task can have multiple Ocean Connections</li>
+          <li>One Products & Services task can have multiple Ocean Connections</li>
         </ul>
       </div>
         <img style={{borderRadius: "1em"}} src={saleType} alt="ClickUp GIF" />

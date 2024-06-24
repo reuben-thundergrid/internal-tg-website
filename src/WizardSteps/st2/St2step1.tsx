@@ -22,7 +22,7 @@ const St2step1 = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
-          <li>Mention the exisitng Ocean connection task in Sales Marina task description</li>
+          <li>Mention the exisitng Ocean connection task in Products & Services task description</li>
           <li>Set the Ocean connection task back to first status</li>
           <li style={{backgroundColor: "rgba(0, 187, 20, 0.31)", borderRadius: "15px", padding: "0.2em"}}>When mentioning a task, type to search. You can search by a task's custom ID</li>
         </ul>

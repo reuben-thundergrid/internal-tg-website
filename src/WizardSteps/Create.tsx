@@ -22,7 +22,7 @@ const Create = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
-          <li>Create a new task in the Sales Marina ➡️ Main list inside ClickUp</li>
+          <li>Create a new task in the Products & Services ➡️ Main list inside ClickUp</li>
           <li>Make the name of the task the same as the deal in Hubspot</li>
           <li>You will be the assignee of the task. This should be done automatically</li>
           <li>Make sure to use the default template when creating your task</li>

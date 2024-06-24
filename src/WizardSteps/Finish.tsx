@@ -50,7 +50,7 @@ const Finish = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
-          <li>Move the Sales Marina task into the <b>Tender</b> status</li>
+          <li>Move the Products & Services task into the <b>Tender</b> status</li>
           <li>Sit back and relax! You're all done!</li>
         </ul>
       </div>

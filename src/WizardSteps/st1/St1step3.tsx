@@ -21,6 +21,7 @@ const St1step3 = (props: {
           <li>Enter cluster limit into custom field "Cluster Limit"</li>
           <li>This will be the chargers direct upstream distribution board rating in amps</li>
           <li>For home chargers this is often the same as the building limit</li>
+          <li>If unsure, specify a safe limit. Network Ops will confirm this information during commissioning with the installer</li>
         </ul>
       </div>
     </>

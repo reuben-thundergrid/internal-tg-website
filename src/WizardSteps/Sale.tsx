@@ -86,7 +86,7 @@ const Sale = (props: {
       Modify Ocean Connection
     </Button>
     <p style={{ ...paragraphStyles, gridArea: "2/2/3/3" }}>
-      for when adding chargers to an existing ocean connection
+      for when adding chargers to an existing ocean connection / power distribution
     </p>
     <Button
       variant="contained"
@@ -97,7 +97,7 @@ const Sale = (props: {
       Future Ocean Connection
     </Button>
     <p style={{ ...paragraphStyles, gridArea: "2/3/3/4" }}>
-      for chargers that there are currently no plans to connect to Ocean, Network Ops will not commission these
+      for clients that are not currently requesting connectivity to Ocean or paying for a subscription. Network Ops will not commission these sites
     </p>
     <Button
       variant="contained"
@@ -108,7 +108,7 @@ const Sale = (props: {
       Simple Sale
     </Button>
     <p style={{ ...paragraphStyles, gridArea: "2/4/3/5" }}>
-      not selling a charger and has nothing to do with Ocean
+      not selling a charger and has nothing to do with Ocean. e.g. a charge cable
     </p>
   </div>
 </div>;

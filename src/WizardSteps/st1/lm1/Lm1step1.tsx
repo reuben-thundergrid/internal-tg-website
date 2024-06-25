@@ -20,6 +20,7 @@ const Lm1step1 = (props: {
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Fill out the custom field "Building Limit"</li>
           <li>Specify the power source that the energy meter will monitor</li>
+          <li>If unsure, specify a safe limit. Network Ops will confirm this information during commissioning with the installer</li>
         </ul>
       </div>
     </>

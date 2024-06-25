@@ -39,6 +39,7 @@ import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
 import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
 import Phz2step1 from "./WizardSteps/st1/phz2/Phz2step1.tsx";
 import Mixstep1 from "./WizardSteps/st1/mix1/Mix1step1.tsx";
+import St1step69 from "./WizardSteps/st1/St1step69.tsx";
 
 const WizardSteps = (props: {
     step: TStep;
@@ -56,6 +57,8 @@ const WizardSteps = (props: {
         //Sale Type 1
         case "st1step0":
             return <St1step0 {...props}/>;
+        case "st1step69":
+            return <St1step69 {...props}/>;
         case "st1step1":
             return <St1step1 {...props}/>;
         case "st1step12":

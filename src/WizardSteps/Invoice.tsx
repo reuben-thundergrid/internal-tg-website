@@ -11,7 +11,7 @@ const Invoice = (props: {
 }) => {
   return (
   <>
-    <StepHeader>specify invoice</StepHeader>
+    <StepHeader>specify equipment list</StepHeader>
     <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
         <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={invoiceGif} alt="ClickUp GIF" />
       </div>

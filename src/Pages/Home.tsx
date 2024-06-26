@@ -24,7 +24,7 @@ const Home = () => {
                     <Button variant="contained" color="success" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleWizardClick}>Go To Wizard</Button>
                 </div>
 
-                <div style={{border: "1px solid pink", borderRadius: "1em", display: "flex", flexDirection: "row", alignItems: "center"}}>
+                <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "1em"}}>
                     <div style={{border: "1px solid pink", borderRadius: "1em", display: "flex", flexDirection: "column", alignItems: "center"}}>
                         <h3 style={{color: "white", padding: "1em", margin: "0"}}>Slack Help & Support</h3>
                         <Button variant="contained" color="primary" endIcon={<ArrowForwardIcon />} style={{margin: "1em", fontSize: "1.5em", transition: "transform 0.3s ease"}} onClick={handleSlack}>Go To Slack Channel</Button>

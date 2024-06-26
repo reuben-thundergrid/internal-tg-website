@@ -1,4 +1,6 @@
 import React from "react";
+// eslint-disable-next-line
+import { useNavigate } from "react-router-dom";
 import "../App.css"
 
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -87,8 +89,11 @@ const Wizard = () => {
     return true;
   }
 
+  // const navigate = useNavigate();
+
   return (
     <>
+      {/* {navigate("/wizard/" + step)} */}
       {console.log(step)}
       <div style={{display: "grid"}}>
         <WizardSteps {...{ step, wizard}}/>

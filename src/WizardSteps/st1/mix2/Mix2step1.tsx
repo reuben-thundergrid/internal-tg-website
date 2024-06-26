@@ -6,13 +6,13 @@ import StepHeader from "../../../Components/StepHeader.tsx"
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
 
-const Mix1step1 = (props: {
+const Mix2step1 = (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
   return (
     <>
-      <StepHeader>Local Energy Meter Combo</StepHeader>
+      <StepHeader>Local Dynamic Cluster Combo</StepHeader>
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
         <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={lm1step0Gif} alt="ClickUp GIF"/>
       </div>
@@ -26,4 +26,4 @@ const Mix1step1 = (props: {
   );
 };
 
-export default Mix1step1;
+export default Mix2step1;

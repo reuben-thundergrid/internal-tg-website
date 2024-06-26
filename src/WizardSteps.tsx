@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";
 import { TStep } from "use-wizard/lib/cjs/useWizard/types/TStep";
@@ -38,13 +38,17 @@ import Non1step2 from "./WizardSteps/st1/non1/Non1step2.tsx";
 import St1Step12 from "./WizardSteps/st1/St1step12.tsx";
 import St1Step13 from "./WizardSteps/st1/St1step13.tsx";
 import Phz2step1 from "./WizardSteps/st1/phz2/Phz2step1.tsx";
-import Mixstep1 from "./WizardSteps/st1/mix1/Mix1step1.tsx";
+import Mix1step1 from "./WizardSteps/st1/mix1/Mix1step1.tsx";
 import St1step69 from "./WizardSteps/st1/St1step69.tsx";
+import Mix2step1 from "./WizardSteps/st1/mix2/Mix2step1.tsx";
 
 const WizardSteps = (props: {
     step: TStep;
     wizard: IWizard;
   }) => {
+
+    const [staticLoad, setStaticLoad] = useState(false);
+
     switch (props.step) {
         //Start
         case "create":
@@ -66,7 +70,7 @@ const WizardSteps = (props: {
         case "st1step13":
             return <St1Step13 {...props}/>;
         case "st1step2":
-            return <St1step2 {...props}/>;
+            return <St1step2 {...props} staticLoad={staticLoad} setStaticLoad={setStaticLoad}/>;
 
             //Load management 1
             case "cld1step1":
@@ -76,7 +80,9 @@ const WizardSteps = (props: {
             case "non1step1":
                 return <Non1step1 {...props}/>;
             case "mix1step1":
-                return <Mixstep1 {...props} />;
+                return <Mix1step1 {...props} />;
+            case "mix2step1":
+                return <Mix2step1 {...props} />;
 
             //Buidling Limit
             case "lm1step1":

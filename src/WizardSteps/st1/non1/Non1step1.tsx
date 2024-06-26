@@ -10,6 +10,9 @@ const Non1step1 = (props: {
   step: TStep;
   wizard: IWizard;
 }) => {
+
+  
+
   return (
     <>
       <StepHeader>specify type of energy meter as none</StepHeader>
@@ -19,6 +22,7 @@ const Non1step1 = (props: {
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Select energy meter type for the custom field and choose "None"</li>
+          <li>If selecting a static load management type: If you are wanting a lower static limit than the default specify this in the description</li>
         </ul>
       </div>
     </>

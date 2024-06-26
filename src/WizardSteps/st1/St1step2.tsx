@@ -40,7 +40,7 @@ const St1step2 = (props: {
       <img style={{margin: "1em", borderRadius: "1em"}} src={st1step2Gif} alt="ClickUp GIF" />
     </div>
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
-    <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center", gap: "1em"}}>
+    <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center", gap: "1em", marginBottom: "8em"}}>
       <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#3397DD"}} 

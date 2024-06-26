@@ -19,7 +19,7 @@ const Sale = (props: {
     alignItems: "center",
     justifyContent: "center",
     gridRowStart: 5,
-    gridColumn: "1/3",
+    gridColumn: "1/3"
   };
   
   const innerContainerStyles: CSSProperties = {

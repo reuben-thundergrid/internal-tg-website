@@ -25,6 +25,7 @@ const St3step0 = (props: {
         <li>This task will be in the <i>Dormant</i> list</li>
         <li>Mention this task under "Ocean Connection(s)" in the Sales task</li>
         <li>OPTIONAL: Fill out as much info about the Ocean Connection as possible</li>
+        <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>A site address is the most useful piece of information here</li>
       </ul>
       <Button variant="contained" endIcon={<OpenInNewIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700"}} onClick={() => props.wizard.goToStep("st1step0")}>Follow Steps for new Ocean Connection</Button>
     </div>

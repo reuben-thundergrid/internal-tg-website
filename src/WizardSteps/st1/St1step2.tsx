@@ -15,7 +15,7 @@ const St1step2 = (props: {
 }) => {
 
   const nextButtonBox : CSSProperties = {
-    width: "auto",
+    width: "100%",
     margin: "1em",
     fontSize: "1.5em",
     fontWeight: "700"
@@ -23,7 +23,14 @@ const St1step2 = (props: {
 
   const firstP : CSSProperties = {
     fontWeight: 800
-  }
+  };
+
+  const nextContainer : CSSProperties = {
+    display: "flex", 
+    flexDirection: "column", 
+    alignItems: "center", 
+    width: "12%"
+  };
 
   return (
     <>
@@ -34,23 +41,23 @@ const St1step2 = (props: {
     </div>
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center", gap: "1em"}}>
-      <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#3397DD"}} 
           onClick={() => props.wizard.goToStep("non1step1")}>LDC
         </Button>
-        <p style={{...firstP, whiteSpace: "nowrap"}}>Local Dynamic Cluster</p>
-        <p style={{whiteSpace: "nowrap"}}>no energy meter, chargers are networked together</p>
+        <p style={{...firstP}}>Local Dynamic Cluster</p>
+        <p style={{}}>no energy meter, chargers are networked together</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#7045E6"}} 
           onClick={() => props.wizard.goToStep("loc1step1")}>LEM
         </Button>
-        <p style={{...firstP, width: "100%"}}>Local Energy Meter</p>
+        <p style={{...firstP}}>Local Energy Meter</p>
         <p>energy meter installed at switchboard</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#D373E3"}} 
           onClick={() => props.wizard.goToStep("mix2step1")}>LDC Combo
@@ -58,7 +65,7 @@ const St1step2 = (props: {
         <p style={{...firstP}}>Local Dynamic Cluster + Static</p>
         <p>no energy meter, mixture of chargers networked together with ones that are not</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#749FE6"}} 
           onClick={() => props.wizard.goToStep("mix1step1")}>LEM Combo
@@ -66,7 +73,7 @@ const St1step2 = (props: {
         <p style={{...firstP}}>Local Energy Meter + Static</p>
         <p>energy meter installed at switchboard & mixture of chargers networked together with ones that are not</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#667684"}} 
           onClick={() => props.wizard.goToStep("non1step1")}>Static
@@ -74,14 +81,14 @@ const St1step2 = (props: {
         <p style={{...firstP}}>Static Limit</p>
         <p>chargers are not networked together, no dynamic flexing</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#29B964"}} 
           onClick={() => props.wizard.goToStep("cld1step1")}>CEM
         </Button>
         <p style={{...firstP}}>Cloud Energy Meter</p>
       </div>
-      <div>
+      <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#CF4900"}} 
           onClick={() => props.wizard.goToStep("cld1step1")}>EVLM2

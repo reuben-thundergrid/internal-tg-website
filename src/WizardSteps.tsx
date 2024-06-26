@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, {useState} from "react";
 
 import { IWizard } from "use-wizard/lib/cjs/useWizard/types/IWizard";

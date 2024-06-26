@@ -10,7 +10,6 @@ const StepHeader = ({children}) => {
     function handleHome() { navigate("/home"); }
 
     const location = useLocation();
-    console.log(location.pathname);
 
     return (
         <>

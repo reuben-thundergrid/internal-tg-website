@@ -17,7 +17,9 @@ const St1step5 = (props: {
     <>
     <StepHeader>specify public or private charger</StepHeader>
     <h2 style={{color: "white", gridRowStart: 3, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Specify in Custom Field "Access Type"</h2>
-    <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step5Gif} alt="ClickUp GIF" />
+    <div style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", display: "flex", justifyContent: "center"}}>
+      <img style={{borderRadius: "1em"}} src={st1step5Gif} alt="ClickUp GIF" />
+    </div>
     <h3 style={{color: "white", gridRowStart: 4, gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center"}}>Select Option to Continue</h3>
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>

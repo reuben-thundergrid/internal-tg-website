@@ -19,7 +19,7 @@ const Mix1step1 = (props: {
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
           <li>Specify in the description how many chargers are to be statically configured</li>
-          <li>If a lower current than the default is be set specify this as well</li>
+          <li>If a lower current than the default is requried, specify this as well</li>
         </ul>
       </div>
     </>

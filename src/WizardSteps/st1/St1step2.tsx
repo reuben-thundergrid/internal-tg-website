@@ -37,7 +37,7 @@ const St1step2 = (props: {
       <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 
           style={{...nextButtonBox, backgroundColor: "#3397DD"}} 
-          onClick={() => props.wizard.goToStep("non1step2")}>LDC
+          onClick={() => props.wizard.goToStep("non1step1")}>LDC
         </Button>
         <p style={{...firstP, whiteSpace: "nowrap"}}>Local Dynamic Cluster</p>
         <p style={{whiteSpace: "nowrap"}}>no energy meter, chargers are networked together</p>

@@ -47,7 +47,7 @@ const WizardSteps = (props: {
     wizard: IWizard;
   }) => {
 
-    const [staticLoad, setStaticLoad] = useState(false);
+    // const [staticLoad, setStaticLoad] = useState(false);
 
     switch (props.step) {
         //Start
@@ -70,7 +70,8 @@ const WizardSteps = (props: {
         case "st1step13":
             return <St1Step13 {...props}/>;
         case "st1step2":
-            return <St1step2 {...props} staticLoad={staticLoad} setStaticLoad={setStaticLoad}/>;
+            return <St1step2 {...props}/>;
+            // return <St1step2 {...props} staticLoad={staticLoad} setStaticLoad={setStaticLoad}/>;
 
             //Load management 1
             case "cld1step1":

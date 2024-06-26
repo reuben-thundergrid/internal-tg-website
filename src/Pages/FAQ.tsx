@@ -59,12 +59,6 @@ const FAQ = () => {
                 <h4 style={{ ...answer}}>If the invoices are combined delineate which Ocean Connections are ready to fulfil & the gear that will be associated with that connection in a comment. Mention @Fulfilment.</h4>
                 <h4 style={{ ...answer}}>Make sure all Ocean connections are created even if they are placeholder (not completely filled out yet). They will be set up as a dependency which will prevent the task from being closed until all Ocean connections are commissioned.</h4>
             </div>
-            <div style={{ ...faqBox}}>
-                <h3 style={{ ...question}}>Question: How do I specify a maximum charger limit when there is no load management being installed?</h3>
-                <h4 style={{ ...answer}}>Answer: In this case, mention this in the other notes section in the description inside the Ocean Connection.</h4>
-                <h4 style={{ ...answer}}>Specify the maximum chargepoint current to be configured.</h4>
-                <h4 style={{ ...answer}}>Mention @fulfilment in the comments pointing that this is to be configured</h4>
-            </div>
         </div>
     </>
     );

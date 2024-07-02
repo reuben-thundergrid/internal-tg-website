@@ -42,6 +42,7 @@ const FAQ = () => {
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What do I do if I have multiple equipment lists for one sale?</h3>
                 <h4 style={{ ...answer}}>Answer: In the case of multiple equipment lists, enter thundergrid.click/split in the 'Equipment List' custom field. Place a URL to all the equipment lists in the description under the Other Notes section.</h4>
+                <h4 style={{ ...answer}}>If the equipment lists are associated with an Ocean connection AND each Ocean connection is being shipped to a different location. Denote this in the description with the syntax Ocean Connection custom ID followed by the equipment list on the same line. Example ▶️ 'OCEAN-XXX ➝ https://xero.com/inv...'</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for one Products & Services task</h3>

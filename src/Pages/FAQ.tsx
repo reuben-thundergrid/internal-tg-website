@@ -45,6 +45,10 @@ const FAQ = () => {
                 <h4 style={{ ...answer}}>If the equipment lists are associated with an Ocean connection AND each Ocean connection is being shipped to a different location. Denote this in the description with the syntax Ocean Connection custom ID followed by the equipment list on the same line. Example ▶️ 'OCEAN-XXX ➝ https://xero.com/inv...'</h4>
             </div>
             <div style={{ ...faqBox}}>
+                <h3 style={{ ...question}}>Question: Shipping gear to multiple places, single invoice or shipping gear to multiple places, multiple invoices, invoices DO NOT line up with an Ocean connection</h3>
+                <h4 style={{ ...answer}}>Answer: This workflow is not well supported by the system. You will have to create the shipping tasks for fulfilment. Talk to fulfilment if you need help doing this.</h4>
+            </div>
+            <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for one Products & Services task</h3>
                 <h4 style={{ ...answer}}>Answer: If for example, you have a New Ocean Connection and Modify Ocean Connection in one sale, you will have to create two Products & Services tasks. This scenario is not supported by the system.</h4>
             </div>

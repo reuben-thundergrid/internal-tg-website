@@ -23,6 +23,7 @@ const Shipping = (props: {
       <ul style={{color: "white", marginLeft: "0.4em"}}>
         <li>Specify the <b>Delivery Address</b> in description of the Products & Services task</li>
         <li>If shipping to the installer & they are specified in the Ocean connection. Simply put "Shipping to installer"</li>
+        <li>If Ocean connections have different delivery addresses. Reference the Ocean Connection's task custom ID and then the delivery address on a single line</li>
       </ul>
     </div>
   </>

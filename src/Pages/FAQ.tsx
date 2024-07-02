@@ -40,8 +40,8 @@ const FAQ = () => {
                 <h4 style={{ ...answer}}>Answer: Move the task back to the Tender status. Mention @Fulfilment in the Products & Services task activity section. Outline what has changed. Follow thundergrid.click/wizard as if it was a new order to ensure everything that needs to be filled out is.</h4>
             </div>
             <div style={{ ...faqBox}}>
-                <h3 style={{ ...question}}>Question: What do I do if I have multiple invoices for one sale?</h3>
-                <h4 style={{ ...answer}}>Answer: In the case of multiple invoices or split invoices. Enter thundergrid.click/split in the Invoice custom field. Link both invoices in the description under the Other Notes section.</h4>
+                <h3 style={{ ...question}}>Question: What do I do if I have multiple equipment lists for one sale?</h3>
+                <h4 style={{ ...answer}}>Answer: In the case of multiple equipment lists, enter thundergrid.click/split in the 'Equipment List' custom field. Place a URL to all the equipment lists in the description under the Other Notes section.</h4>
             </div>
             <div style={{ ...faqBox}}>
                 <h3 style={{ ...question}}>Question: What do I do if I have multiple 'Sale Types' for one Products & Services task</h3>

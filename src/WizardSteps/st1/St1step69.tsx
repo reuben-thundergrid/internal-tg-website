@@ -18,8 +18,8 @@ const St1step69 = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>
-          <li>Specify which country the chargers are going into in the custom field "Instance"</li>
-          <li>This determines which Ocean instance the chargers will get added too</li>
+          <li>In the new Ocean connection task, specify which country the chargers are going into in the custom field "Instance"</li>
+          <li>This determines which Ocean instance the chargers will get added to</li>
         </ul>
       </div>
     </>

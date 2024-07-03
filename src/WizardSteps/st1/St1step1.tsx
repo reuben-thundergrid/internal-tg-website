@@ -18,7 +18,7 @@ const St1step1 = (props: {
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
         <ul style={{color: "white", marginLeft: "0.4em"}}>
-          <li>In the new Ocean connection task, fill out the custom field <b>Site Address</b></li>
+          <li>Fill out the custom field <b>Site Address</b></li>
           <li>This is to indicate where the chargers are installed</li>
           <li style={{backgroundColor: "rgba(226,60,71,0.3)", borderRadius: "0.2em"}}>If possible please specify a house number</li>
         </ul>

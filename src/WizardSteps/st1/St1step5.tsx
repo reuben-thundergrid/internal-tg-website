@@ -24,9 +24,15 @@ const St1step5 = (props: {
     <div style={{color: "white", gridRowStart: 5, gridColumnStart: 1, gridColumnEnd: 3, display: "flex", flexDirection: "row", justifyContent: "center", textAlign: "center"}}>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#18A98C"}} onClick={() => props.wizard.goToStep("pub1step1")}>Public</Button>
+        <p>Public charger</p>
       </div>
       <div>
-        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#E50000"}} onClick={() => props.wizard.goToStep("prv1step1")}>Private</Button>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#E50000"}} onClick={() => props.wizard.goToStep("prv1step1")}>Private Office</Button>
+        <p>All other commercial installs</p>
+      </div>
+      <div>
+        <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#FF7800"}} onClick={() => props.wizard.goToStep("prv1step1")}>Private Home</Button>
+        <p>Client's home charging program</p>
       </div>
     </div>
   </>

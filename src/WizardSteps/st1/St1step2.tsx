@@ -47,7 +47,7 @@ const St1step2 = (props: {
           onClick={() => props.wizard.goToStep("non1step1")}>LDC
         </Button>
         <p style={{...firstP}}>Local Dynamic Cluster</p>
-        <p style={{}}>no energy meter, chargers are networked together</p>
+        <p>no energy meter, chargers are networked together</p>
       </div>
       <div style={{...nextContainer}}>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} 

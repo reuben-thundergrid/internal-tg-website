@@ -22,7 +22,7 @@ const St1step0 = (props: {
         {/* <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} alt="ClickUp GIF" /> */}
         <YoutubeEmbed embedId="s0c4SQmFQQE?si=hWjzBMz-7NZEftLV" />
       </div>
-      <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column"}}>
+      <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column", paddingBottom: "4em"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>
           <li>Create a new task inside Ocean Plus ➡️ Ocean Connections ➡️ Main</li>
           <li>Mention this task inside the Sales task description under the "Ocean Connection(s)" text</li>

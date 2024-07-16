@@ -32,7 +32,7 @@ const St1step5 = (props: {
       </div>
       <div>
         <Button variant="contained" endIcon={<ArrowForwardIcon />} style={{width: "auto", margin: "1em", fontSize: "1.5em", fontWeight: "700", backgroundColor: "#FF7800"}} onClick={() => props.wizard.goToStep("prv1step1")}>Private Home</Button>
-        <p>Client's home charging program</p>
+        <p>Client's home charging program or domestic install</p>
       </div>
     </div>
   </>

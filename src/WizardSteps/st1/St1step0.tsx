@@ -1,5 +1,5 @@
 import React from "react";
-// import st1step0Gif from "../../Gif/st1step0.gif";
+import oceanLocationNaming from "../../Gif/ocean-location-naming.png";
 
 import YoutubeEmbed from "../../Components/YoututbeEmbed.js";
 
@@ -21,6 +21,7 @@ const St1step0 = (props: {
       <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
         {/* <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} alt="ClickUp GIF" /> */}
         <YoutubeEmbed embedId="s0c4SQmFQQE?si=hWjzBMz-7NZEftLV" />
+        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={oceanLocationNaming} alt="Naming PNG" />
       </div>
       <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column", paddingBottom: "4em"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>

@@ -18,12 +18,12 @@ const St1step0 = (props: {
   return (
     <>
       <StepHeader>create new ocean connection in main and link the task</StepHeader>
-      <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
+      <div style={{display: "flex", marginLeft: "auto", alignContent: "center", justifyContent: "center", alignSelf: "center", flexDirection: "column"}}>
         {/* <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={st1step0Gif} alt="ClickUp GIF" /> */}
         <YoutubeEmbed embedId="s0c4SQmFQQE?si=hWjzBMz-7NZEftLV" />
-        <img style={{gridRowStart: 2, gridRowEnd: 3, gridColumnStart: 2, gridColumnEnd: 3, margin: "1em", borderRadius: "1em"}} src={oceanLocationNaming} alt="Naming PNG" />
+        <img style={{borderRadius: "1em"}} src={oceanLocationNaming} alt="Naming PNG" />
       </div>
-      <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column", paddingBottom: "4em"}}>
+      <div style={{gridRowStart: 2, gridColumnStart: 1, display: "flex", flexDirection: "column", paddingBottom: "40em"}}>
         <ul style={{color: "white", marginLeft: "0.4em", display: "flex", flexDirection: "column"}}>
           <li>Create a new task inside Ocean Plus ➡️ Ocean Connections ➡️ Main</li>
           <li>Mention this task inside the Sales task description under the "Ocean Connection(s)" text</li>
